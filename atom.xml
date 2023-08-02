@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-08-01T07:29:34.573Z</updated>
+  <updated>2023-08-02T14:43:24.873Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>插件小总结</title>
+    <link href="http://example.com/posts/4d8c4fd7.html"/>
+    <id>http://example.com/posts/4d8c4fd7.html</id>
+    <published>2023-08-02T13:44:44.000Z</published>
+    <updated>2023-08-02T14:43:24.873Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、用户体验改善"><a href="#一、用户体验改善" class="headerlink" title="一、用户体验改善"></a>一、用户体验改善</h3><p>通过添加有用的插件功能，可以提供更好的用户体验。（比如展板吉祥物哈哈）</p><p>目前来看，社交媒体分享插件可以帮助用户方便地分享内容，增加互动性和传播范围；<br>客服支持插件（暂未部署上网页）可以提供实时沟通渠道，解决用户问题；<br>图片优化插件可以改善加载速度，提升页面呈现效果等。（所谓懒加载）<br>这些插件能够增加用户满意度，提高用户留存率。（真的吗）</p><hr><h3 id="二、功能扩展与定制"><a href="#二、功能扩展与定制" class="headerlink" title="二、功能扩展与定制"></a>二、功能扩展与定制</h3><p>插件功能拓展可以帮助网站实现更多的功能需求。这一点在 VScode 里面给我感触很深。<br>无论是添加在线支付、社区论坛、商城模块还是新闻订阅等，插件可以提供现成的解决方案，减少开发时间和成本。<br>这对于网站拓展和满足用户需求非常重要。</p><hr><h3 id="三、网站性能和加载速度"><a href="#三、网站性能和加载速度" class="headerlink" title="三、网站性能和加载速度"></a>三、网站性能和加载速度</h3><p>插件的质量和数量可能会对网站性能产生影响。某些插件可能会增加页面加载时间，降低网站速度，导致用户体验下降。这里严重批评某 css 文件的加入让我 hexo-g-time 足足翻了三倍<br>因此，在选择插件时，需要注意其对网站性能的影响，合理评估并进行性能优化。</p><hr><h3 id="四、安全与稳定性"><a href="#四、安全与稳定性" class="headerlink" title="四、安全与稳定性"></a>四、安全与稳定性</h3><p>插件的安全性和稳定性也是需要考虑的因素。<br>低质量或不被维护的插件可能存在漏洞或与其他插件不兼容，从而导致网站易受攻击或崩溃。<br>（有一说一现在高危漏洞已经出现了，也是因为使用了大概是版本不够适配的 live 插件导致的，不够不影响使用，暂时没敢动它）<br>因此，建议仔细选择插件，确保其来自可信赖的来源，并及时更新和维护。</p><hr><h3 id="五、SEO-和搜索引擎"><a href="#五、SEO-和搜索引擎" class="headerlink" title="五、SEO 和搜索引擎"></a>五、SEO 和搜索引擎</h3><p>某些插件可能会对搜索引擎优化（SEO）产生影响。优化良好的插件可以帮助提高网站的可见性和排名，而低质量的插件可能会影响网站的 SEO 效果。因此，在选择插件时，要注意其是否符合 SEO 最佳实践，并且不会对网站的可搜索性产生负面影响。<br>希望插件能越来越齐全，插件对于各组应用（网易云，VScode）真如 MC 的 mod 一样。</p><hr><h3 id="六、致谢"><a href="#六、致谢" class="headerlink" title="六、致谢"></a>六、致谢</h3><p>感谢叶城萌给我做的网页底部小图标:<br>“CH0ico : 小猫不吃巧克力”<br><img src="/img/有文字 白色背景.png" ><br>かわいいピンチ 可爱捏</p><hr><h3 id="废话在这"><a href="#废话在这" class="headerlink" title="废话在这~"></a>废话在这~</h3><p>VScode 比直接用终端命令行方便太多太多了，至少不用一直点鼠标点不停了。<br>之前 css 文件我是直接在文件库里把 txt 文本命名来创建的（因为没有直接创建的程序可用），运行到今天下载 VScode，在库里面找到一个叫做 XXX.css.txt 的东西，说实话人都麻了。<br>希望插件能越来越齐全，插件对于各组应用（网易云，VScode）真如 MC 的 mod 一样。<br>2023&#x2F;8&#x2F;2.</p><hr><h3 id="最后的最后"><a href="#最后的最后" class="headerlink" title="最后的最后"></a>最后的最后</h3><p>淦，tags 忘了 new page，部署失败给我打回了，明天一定,晕了.</p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;一、用户体验改善&quot;&gt;&lt;a href=&quot;#一、用户体验改善&quot; class=&quot;headerlink&quot; title=&quot;一、用户体验改善&quot;&gt;&lt;/a&gt;一、用户体验改善&lt;/h3&gt;&lt;p&gt;通过添加有用的插件功能，可以提供更好的用户体验。（比如展板吉祥物哈哈）&lt;/p&gt;
+&lt;p&gt;目前来</summary>
+      
+    
+    
+    
+    <category term="today" scheme="http://example.com/categories/today/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>1/8/2023 日志</title>
     <link href="http://example.com/posts/a9fc76fb.html"/>
     <id>http://example.com/posts/a9fc76fb.html</id>
     <published>2023-08-01T02:16:09.000Z</published>
-    <updated>2023-08-01T07:29:34.573Z</updated>
+    <updated>2023-08-02T14:27:38.518Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="更新live2D-LeanCloud-以及-留言板"><a href="#更新live2D-LeanCloud-以及-留言板" class="headerlink" title="更新live2D LeanCloud 以及 留言板"></a>更新live2D LeanCloud 以及 留言板</h2><hr>]]></content>
+    <content type="html"><![CDATA[<h2 id="更新-live2D-LeanCloud-以及-留言板"><a href="#更新-live2D-LeanCloud-以及-留言板" class="headerlink" title="更新 live2D LeanCloud 以及 留言板"></a>更新 live2D LeanCloud 以及 留言板</h2><h2 id="鲤鱼王也转入我院了-殊途同归"><a href="#鲤鱼王也转入我院了-殊途同归" class="headerlink" title="鲤鱼王也转入我院了 殊途同归"></a>鲤鱼王也转入我院了 殊途同归</h2><hr>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;更新live2D-LeanCloud-以及-留言板&quot;&gt;&lt;a href=&quot;#更新live2D-LeanCloud-以及-留言板&quot; class=&quot;headerlink&quot; title=&quot;更新live2D LeanCloud 以及 留言板&quot;&gt;&lt;/a&gt;更新live2D Le</summary>
+    <summary type="html">&lt;h2 id=&quot;更新-live2D-LeanCloud-以及-留言板&quot;&gt;&lt;a href=&quot;#更新-live2D-LeanCloud-以及-留言板&quot; class=&quot;headerlink&quot; title=&quot;更新 live2D LeanCloud 以及 留言板&quot;&gt;&lt;/a&gt;更新 live2</summary>
       
     
     
