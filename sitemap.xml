@@ -20,18 +20,9 @@
   </url>
   
   <url>
-    <loc>http://example.com/posts/4a17b156.html</loc>
-    
-    <lastmod>2023-08-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/categories/index.html</loc>
     
-    <lastmod>2023-08-01</lastmod>
+    <lastmod>2023-08-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -39,6 +30,15 @@
   
   <url>
     <loc>http://example.com/tags/index.html</loc>
+    
+    <lastmod>2023-08-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/posts/4a17b156.html</loc>
     
     <lastmod>2023-08-01</lastmod>
     
@@ -56,7 +56,14 @@
 
   
   <url>
-    <loc>http://example.com/tags/daytime/</loc>
+    <loc>http://example.com/tags/me/</loc>
+    <lastmod>2023-08-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/we/</loc>
     <lastmod>2023-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
