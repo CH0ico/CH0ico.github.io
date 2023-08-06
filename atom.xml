@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-08-05T07:27:16.275Z</updated>
+  <updated>2023-08-06T14:26:45.059Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DDOS from OneWolf</title>
+    <link href="http://example.com/posts/d7b9a56d.html"/>
+    <id>http://example.com/posts/d7b9a56d.html</id>
+    <published>2023-08-06T02:01:55.000Z</published>
+    <updated>2023-08-06T14:26:45.059Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="DDoS-的攻击和防御"><a href="#DDoS-的攻击和防御" class="headerlink" title="DDoS 的攻击和防御"></a>DDoS 的攻击和防御</h1><p>day 1</p><h2 id="一、DDoS-的定义"><a href="#一、DDoS-的定义" class="headerlink" title="一、DDoS 的定义"></a>一、DDoS 的定义</h2><p>DDoS 全称 Distributed Denial of Service，意思为“分布式拒绝服务”，即利用大量合法的分布式服务器对目标发送请求，从而导致正常合法用户无法获得服务。恶意行为。</p><h2 id="二、DDoS-的特点"><a href="#二、DDoS-的特点" class="headerlink" title="二、DDoS 的特点"></a>二、DDoS 的特点</h2><ol><li><p>造成网络瘫痪<br>通过控制大量攻击主机同时连接网站端口，制造大流量无用数据，造成通往被攻击主机的网络拥塞，使被攻击主机无法正常和外界通信。</p></li><li><p>肉鸡攻击<br>肉鸡也称傀儡机，是指可以被黑客远程控制的机器，肉鸡通常被用作 DDoS 攻击，通过肉鸡发起的攻击请求占用服务器各项资源。</p></li><li><p>网络层攻击<br>通过发送伪造源 IP 的 TCP 数据包发送 SYN 或 ACK 包、发送包含错误设置的地址值等攻击方式，耗尽服务器资源，导致服务器拒绝访问。</p></li><li><p>CC 攻击<br>黑客借助代理服务器生成指向受害主机的合法网页请求，实现 DDoS 和伪装就叫 CC（Challenge Collapsar）。肉鸡 CC 攻击是黑客使用 CC 攻击软件，控制大量肉鸡发动攻击，模拟正常用户访问网站的请求，伪造成合法数据包。</p></li></ol><h2 id="三、DDoS-的分类"><a href="#三、DDoS-的分类" class="headerlink" title="三、DDoS 的分类"></a>三、DDoS 的分类</h2><h3 id="（一）自动化程度分类"><a href="#（一）自动化程度分类" class="headerlink" title="（一）自动化程度分类"></a>（一）自动化程度分类</h3><ol><li>手动攻击</li><li>半自动化攻击</li><li>自动化攻击</li></ol><h3 id="（二）协议分类"><a href="#（二）协议分类" class="headerlink" title="（二）协议分类"></a>（二）协议分类</h3><ol><li>洪水攻击 udp（使之带宽饱和）</li><li>利用协议的攻击</li><li>利用广播 ip 的攻击</li><li>利用数据包攻击（IP 地址攻击和 IP 数据包属性攻击）</li></ol><h3 id="（三）速率分类"><a href="#（三）速率分类" class="headerlink" title="（三）速率分类"></a>（三）速率分类</h3><ol><li>持续速率 影响快</li><li>可变速率</li></ol><h3 id="（四）影响力分类"><a href="#（四）影响力分类" class="headerlink" title="（四）影响力分类"></a>（四）影响力分类</h3><ol><li>网络服务彻底崩溃</li><li>网络服务能力降低</li></ol><h3 id="（五）入侵目标"><a href="#（五）入侵目标" class="headerlink" title="（五）入侵目标"></a>（五）入侵目标</h3><ol><li>带宽攻击</li><li>连通性攻击</li></ol><h2 id="四、被-DDoS-的表现"><a href="#四、被-DDoS-的表现" class="headerlink" title="四、被 DDoS 的表现"></a>四、被 DDoS 的表现</h2><h3 id="被攻击主机上有大量求情"><a href="#被攻击主机上有大量求情" class="headerlink" title="被攻击主机上有大量求情"></a>被攻击主机上有大量求情</h3><p>充斥大量 TCP 数据包<br>制造大量无用数据 导致网络拥塞 无法与外界网络连接</p><hr><p>是独狼薅来的老师 算个科普<br>周日 摸鱼~</p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;DDoS-的攻击和防御&quot;&gt;&lt;a href=&quot;#DDoS-的攻击和防御&quot; class=&quot;headerlink&quot; title=&quot;DDoS 的攻击和防御&quot;&gt;&lt;/a&gt;DDoS 的攻击和防御&lt;/h1&gt;&lt;p&gt;day 1&lt;/p&gt;
+&lt;h2 id=&quot;一、DDoS-的定义&quot;&gt;&lt;a h</summary>
+      
+    
+    
+    
+    <category term="学习笔记" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="OneWolf" scheme="http://example.com/tags/OneWolf/"/>
+    
+  </entry>
   
   <entry>
     <title>计网笔记（二）</title>
@@ -42,12 +67,15 @@
     <link href="http://example.com/posts/be461be7.html"/>
     <id>http://example.com/posts/be461be7.html</id>
     <published>2023-08-04T16:11:00.000Z</published>
-    <updated>2023-08-04T16:42:15.747Z</updated>
+    <updated>2023-08-06T02:02:56.032Z</updated>
     
     <content type="html"><![CDATA[<h1 id="计算机网络概述"><a href="#计算机网络概述" class="headerlink" title="计算机网络概述"></a>计算机网络概述</h1><h2 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h2><p><img src="https://img1.imgtp.com/2023/08/05/kmbrmcJy.png" alt="输入图片说明"></p><h3 id="（一）定义"><a href="#（一）定义" class="headerlink" title="（一）定义"></a>（一）定义</h3><p>是一个将分散的、具有独立功能懂得<strong>计算机系统</strong>，通过通信设备与线路来连接起来，由功能完善的软件实现<strong>资源共享</strong>和<strong>信息传递</strong>得到系统。计算机网络是互连的、自治的计算机集合。</p><blockquote><p>互连：通过通信链路互联互通</p></blockquote><blockquote><p>互治：无主从关系</p></blockquote><h3 id="（二）功能"><a href="#（二）功能" class="headerlink" title="（二）功能"></a>（二）功能</h3><ol><li>同一个计算机网络上的其他计算机可以使用某台计算机的计算机资源的行为，可以共享硬件软件和数据</li><li>分布式处理（Hadoop 平台） 多台计算机各自承担同一工作任务的不同部分</li><li>提高可靠性： 替代机</li><li>负载均衡（分布式衍生的去中心化行为）</li></ol><hr><hr><h2 id="二、发展阶段"><a href="#二、发展阶段" class="headerlink" title="二、发展阶段"></a>二、发展阶段</h2><p>ARPAnet –&gt; internet 互联网 TCP&#x2F;IP 协议（实现网络互联 ） ——》 Internet 因特网 &#x2F;&#x2F; 三级结构（主干 本地 校园&#x2F;企业）&#x2F;&#x2F; 多层次的 ISP（因特网服务提供商）结构</p><p>网络 把计算机连接在一起</p><p>互联网 把网络连接在一起</p><p>因特网是世界上最大的互联网</p><p>IXP: 因特网交换点（同层次交换数据 不需要经过更高层）</p><hr><h2 id="三、组成分类"><a href="#三、组成分类" class="headerlink" title="三、组成分类"></a>三、组成分类</h2><h3 id="（一）组成部分"><a href="#（一）组成部分" class="headerlink" title="（一）组成部分"></a>（一）组成部分</h3><p>硬件 软件 协议</p><h3 id="（二）工作方式"><a href="#（二）工作方式" class="headerlink" title="（二）工作方式"></a>（二）工作方式</h3><p>边缘部分（构成元素 终端计算机 服务器 摄像头…）端和端的近程通信（C&#x2F;S 方式 cliew 、sever 信令服务器 ）（P2P peer-to-peer 对等连接 借助协议保证传输内容的完整 ）</p><p>核心部分 为边缘部分服务的路由器等设备</p><h3 id="（三）功能组成"><a href="#（三）功能组成" class="headerlink" title="（三）功能组成"></a>（三）功能组成</h3><p>数据通信（通信子网） 资源共享（资源子网）</p><table><thead><tr><th>层次</th></tr></thead><tbody><tr><td>1.应用层</td></tr><tr><td>2.表示层</td></tr><tr><td>3.会话层</td></tr><tr><td>4.传输层</td></tr><tr><td>5.网络层</td></tr><tr><td>6.数据链路层</td></tr><tr><td>7.物理层</td></tr></tbody></table><p>后三层：路由器\交换机和网桥\集线器和中继器，部署成通信子网（有各种传输介质、通信设备 相应得到网络协议）。</p><p>前三层：实现资源共享的设备和软件的集合。</p><hr><h3 id="（四）不同分类方法"><a href="#（四）不同分类方法" class="headerlink" title="（四）不同分类方法"></a>（四）不同分类方法</h3><p><img src="https://img1.imgtp.com/2023/08/05/Qx4vsxEc.png" alt="输入图片说明"></p><blockquote><p>广域网 WAN 交换技术<br>城域网 MAN<br>局域网 LAN 广播技术<br>个人区域网 PAN</p></blockquote><hr>]]></content>
     
     
-    <summary type="html">这是显示在首页的概述，正文内容均会被隐藏。</summary>
+      
+      
+    <summary type="html">&lt;h1 id=&quot;计算机网络概述&quot;&gt;&lt;a href=&quot;#计算机网络概述&quot; class=&quot;headerlink&quot; title=&quot;计算机网络概述&quot;&gt;&lt;/a&gt;计算机网络概述&lt;/h1&gt;&lt;h2 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot; titl</summary>
+      
     
     
     
@@ -63,9 +91,9 @@
     <link href="http://example.com/posts/4d8c4fd7.html"/>
     <id>http://example.com/posts/4d8c4fd7.html</id>
     <published>2023-08-02T13:44:44.000Z</published>
-    <updated>2023-08-05T08:01:55.043Z</updated>
+    <updated>2023-08-06T02:01:10.298Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="一、用户体验改善"><a href="#一、用户体验改善" class="headerlink" title="一、用户体验改善"></a>一、用户体验改善</h3><p>通过添加有用的插件功能，可以提供更好的用户体验。（比如展板吉祥物哈哈）</p><p>目前来看，社交媒体分享插件可以帮助用户方便地分享内容，增加互动性和传播范围；<br>客服支持插件（暂未部署上网页）可以提供实时沟通渠道，解决用户问题；<br>图片优化插件可以改善加载速度，提升页面呈现效果等。（所谓懒加载）<br>这些插件能够增加用户满意度，提高用户留存率。（真的吗）</p><hr><h3 id="二、功能扩展与定制"><a href="#二、功能扩展与定制" class="headerlink" title="二、功能扩展与定制"></a>二、功能扩展与定制</h3><p>插件功能拓展可以帮助网站实现更多的功能需求。这一点在 VScode 里面给我感触很深。<br>无论是添加在线支付、社区论坛、商城模块还是新闻订阅等，插件可以提供现成的解决方案，减少开发时间和成本。<br>这对于网站拓展和满足用户需求非常重要。</p><hr><h3 id="三、网站性能和加载速度"><a href="#三、网站性能和加载速度" class="headerlink" title="三、网站性能和加载速度"></a>三、网站性能和加载速度</h3><p>插件的质量和数量可能会对网站性能产生影响。某些插件可能会增加页面加载时间，降低网站速度，导致用户体验下降。这里严重批评某 css 文件的加入让我 hexo-g-time 足足翻了三倍<br>因此，在选择插件时，需要注意其对网站性能的影响，合理评估并进行性能优化。</p><hr><h3 id="四、安全与稳定性"><a href="#四、安全与稳定性" class="headerlink" title="四、安全与稳定性"></a>四、安全与稳定性</h3><p>插件的安全性和稳定性也是需要考虑的因素。<br>低质量或不被维护的插件可能存在漏洞或与其他插件不兼容，从而导致网站易受攻击或崩溃。<br>（有一说一现在高危漏洞已经出现了，也是因为使用了大概是版本不够适配的 live 插件导致的，不够不影响使用，暂时没敢动它）<br>因此，建议仔细选择插件，确保其来自可信赖的来源，并及时更新和维护。</p><hr><h3 id="五、SEO-和搜索引擎"><a href="#五、SEO-和搜索引擎" class="headerlink" title="五、SEO 和搜索引擎"></a>五、SEO 和搜索引擎</h3><p>某些插件可能会对搜索引擎优化（SEO）产生影响。优化良好的插件可以帮助提高网站的可见性和排名，而低质量的插件可能会影响网站的 SEO 效果。因此，在选择插件时，要注意其是否符合 SEO 最佳实践，并且不会对网站的可搜索性产生负面影响。<br>希望插件能越来越齐全，插件对于各组应用（网易云，VScode）真如 MC 的 mod 一样。</p><hr><h3 id="六、致谢"><a href="#六、致谢" class="headerlink" title="六、致谢"></a>六、致谢</h3><p>感谢叶城萌给我做的网页底部小图标:<br>“CH0ico : 小猫不吃巧克力”<br><img src="/%5Csource%5Cimg%5Cmaomao.png%22" alt="输入图片说明"><br>かわいいピンチ 可爱捏</p><hr><h3 id="废话在这"><a href="#废话在这" class="headerlink" title="废话在这~"></a>废话在这~</h3><p>VScode 比直接用终端命令行方便太多太多了，至少不用一直点鼠标点不停了。<br>之前 css 文件我是直接在文件库里把 txt 文本命名来创建的（因为没有直接创建的程序可用），运行到今天下载 VScode，在库里面找到一个叫做 XXX.css.txt 的东西，说实话人都麻了。<br>希望插件能越来越齐全，插件对于各组应用（网易云，VScode）真如 MC 的 mod 一样。<br>2023&#x2F;8&#x2F;2.</p><hr><h3 id="最后的最后"><a href="#最后的最后" class="headerlink" title="最后的最后"></a>最后的最后</h3><p>淦，tags 忘了 new page，部署失败给我打回了，明天一定,晕了.</p><hr>]]></content>
+    <content type="html"><![CDATA[<h3 id="一、用户体验改善"><a href="#一、用户体验改善" class="headerlink" title="一、用户体验改善"></a>一、用户体验改善</h3><p>通过添加有用的插件功能，可以提供更好的用户体验。（比如展板吉祥物哈哈）</p><p>目前来看，社交媒体分享插件可以帮助用户方便地分享内容，增加互动性和传播范围；<br>客服支持插件（暂未部署上网页）可以提供实时沟通渠道，解决用户问题；<br>图片优化插件可以改善加载速度，提升页面呈现效果等。（所谓懒加载）<br>这些插件能够增加用户满意度，提高用户留存率。（真的吗）</p><hr><h3 id="二、功能扩展与定制"><a href="#二、功能扩展与定制" class="headerlink" title="二、功能扩展与定制"></a>二、功能扩展与定制</h3><p>插件功能拓展可以帮助网站实现更多的功能需求。这一点在 VScode 里面给我感触很深。<br>无论是添加在线支付、社区论坛、商城模块还是新闻订阅等，插件可以提供现成的解决方案，减少开发时间和成本。<br>这对于网站拓展和满足用户需求非常重要。</p><hr><h3 id="三、网站性能和加载速度"><a href="#三、网站性能和加载速度" class="headerlink" title="三、网站性能和加载速度"></a>三、网站性能和加载速度</h3><p>插件的质量和数量可能会对网站性能产生影响。某些插件可能会增加页面加载时间，降低网站速度，导致用户体验下降。这里严重批评某 css 文件的加入让我 hexo-g-time 足足翻了三倍<br>因此，在选择插件时，需要注意其对网站性能的影响，合理评估并进行性能优化。</p><hr><h3 id="四、安全与稳定性"><a href="#四、安全与稳定性" class="headerlink" title="四、安全与稳定性"></a>四、安全与稳定性</h3><p>插件的安全性和稳定性也是需要考虑的因素。<br>低质量或不被维护的插件可能存在漏洞或与其他插件不兼容，从而导致网站易受攻击或崩溃。<br>（有一说一现在高危漏洞已经出现了，也是因为使用了大概是版本不够适配的 live 插件导致的，不够不影响使用，暂时没敢动它）<br>因此，建议仔细选择插件，确保其来自可信赖的来源，并及时更新和维护。</p><hr><h3 id="五、SEO-和搜索引擎"><a href="#五、SEO-和搜索引擎" class="headerlink" title="五、SEO 和搜索引擎"></a>五、SEO 和搜索引擎</h3><p>某些插件可能会对搜索引擎优化（SEO）产生影响。优化良好的插件可以帮助提高网站的可见性和排名，而低质量的插件可能会影响网站的 SEO 效果。因此，在选择插件时，要注意其是否符合 SEO 最佳实践，并且不会对网站的可搜索性产生负面影响。<br>希望插件能越来越齐全，插件对于各组应用（网易云，VScode）真如 MC 的 mod 一样。</p><hr><h3 id="六、致谢"><a href="#六、致谢" class="headerlink" title="六、致谢"></a>六、致谢</h3><p>感谢叶城萌给我做的网页底部小图标:<br>“CH0ico : 小猫不吃巧克力”<br><img src="https://img1.imgtp.com/2023/08/03/U3hSxpgp.png" alt="输入图片说明"><br>かわいいピンチ 可爱捏</p><hr><h3 id="废话在这"><a href="#废话在这" class="headerlink" title="废话在这~"></a>废话在这~</h3><p>VScode 比直接用终端命令行方便太多太多了，至少不用一直点鼠标点不停了。<br>之前 css 文件我是直接在文件库里把 txt 文本命名来创建的（因为没有直接创建的程序可用），运行到今天下载 VScode，在库里面找到一个叫做 XXX.css.txt 的东西，说实话人都麻了。<br>希望插件能越来越齐全，插件对于各组应用（网易云，VScode）真如 MC 的 mod 一样。<br>2023&#x2F;8&#x2F;2.</p><hr><h3 id="最后的最后"><a href="#最后的最后" class="headerlink" title="最后的最后"></a>最后的最后</h3><p>淦，tags 忘了 new page，部署失败给我打回了，明天一定,晕了.</p><hr>]]></content>
     
     
       
