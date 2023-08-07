@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>计网笔记（三）计网体系结构</title>
+      <link href="/posts/c4424117.html"/>
+      <url>/posts/c4424117.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="体系结构和参考模型"><a href="#体系结构和参考模型" class="headerlink" title="体系结构和参考模型"></a>体系结构和参考模型</h1><h2 id="一、分层结构与协议、接口、服务"><a href="#一、分层结构与协议、接口、服务" class="headerlink" title="一、分层结构与协议、接口、服务"></a>一、分层结构与协议、接口、服务</h2><h3 id="（一）分层的意义"><a href="#（一）分层的意义" class="headerlink" title="（一）分层的意义"></a>（一）分层的意义</h3><h4 id="发送文件前："><a href="#发送文件前：" class="headerlink" title="发送文件前："></a>发送文件前：</h4><ol><li>发起通信的计算机必须将数据通信的通路进行<strong>激活</strong></li><li>要告诉网络如何识别目的主机</li><li>发起通信的计算机要查明目的主机的状态</li><li>发起通信的计算机要验证对方计算机中 文件管理程序的准备情况</li><li>确保差错和意外是可以解决的</li><li>……</li></ol><h3 id="（二）分层的事实"><a href="#（二）分层的事实" class="headerlink" title="（二）分层的事实"></a>（二）分层的事实</h3><h4 id="各个层级"><a href="#各个层级" class="headerlink" title="各个层级"></a>各个层级</h4><ol><li>实体（对等实体）</li><li>协议 （水平对等才存在协议）</li><li>接口 （每两个层级接触的关键部位）</li><li>服务 （上层使用下层的服务）</li></ol><h4 id="分层的原则"><a href="#分层的原则" class="headerlink" title="分层的原则"></a>分层的原则</h4><ol><li>各层之间相互独立，每层只实现相对独立的功能；</li><li>镁层之间界面自然清晰，易于理解，相互交流尽可能少；</li><li>结构上可分割开，每层都采用最适合自身的技术来实现；</li><li>保持下层对上层的独立性，上层单向使用下层提供的服务；</li><li>整个分层应该能催紧标准化工作。</li></ol><h4 id="认识分层结构"><a href="#认识分层结构" class="headerlink" title="认识分层结构"></a>认识分层结构</h4><p><img src="https://img1.imgtp.com/2023/08/07/7UNVAZBg.png" alt="辅助图"></p><h3 id="（三）概念总结"><a href="#（三）概念总结" class="headerlink" title="（三）概念总结"></a>（三）概念总结</h3><ul><li>网络体系结构是从<strong>功能</strong>上描述计算机网络结构</li><li>计算机网络体系结构简称网络体系结构是<strong>分层结构</strong></li><li>每层遵循某个（某些）<strong>网络协议</strong>以完成本层功能</li><li><strong>计算机网络体系结构</strong>是计算机网络的<strong>各层及其协议</strong>的集合</li><li>第 n 层在向第 n+1 层提供服务时，此服务不仅包含第 n 层本身的功能，还包含由下层服务提供的功能</li><li>仅仅在相邻层间有接口，且所提供的服务具体实现细节对上一层完全屏蔽</li><li>体系结构是抽象的，而实现是指能运行的一些软件硬件</li></ul><h2 id="二、ISO-OSI-模型"><a href="#二、ISO-OSI-模型" class="headerlink" title="二、ISO&#x2F;OSI 模型"></a>二、ISO&#x2F;OSI 模型</h2><blockquote><p>七层 OSI 参考模型（法定标准）</p></blockquote><h3 id="（一）参考模型的产生"><a href="#（一）参考模型的产生" class="headerlink" title="（一）参考模型的产生"></a>（一）参考模型的产生</h3><h4 id="提出参考模型"><a href="#提出参考模型" class="headerlink" title="提出参考模型"></a>提出参考模型</h4><ol><li>IBM 公司提出 SNA</li><li>DEC 公司提出 DNA</li><li>美国国防部提出 TCP&#x2F;IP</li></ol><h4 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h4><p>为了支持<strong>异构网络系统</strong>的互联互通<br>国际标准化组织（ISO）于 1984 年提出 开放系统互连（OSI）为参考模型<br>理论上很成功，但是市场上失败了）因此成为法定标准</p><ul><li>实践经验缺乏（乌托邦式）</li><li>建模时间过长，市场已经被占据（TCP&#x2F;IP）</li><li>实现起来困难且运行不够高效</li><li>层次划分不够合理</li></ul><h3 id="（二）OSI-七层结构"><a href="#（二）OSI-七层结构" class="headerlink" title="（二）OSI 七层结构"></a>（二）OSI 七层结构</h3><h4 id="分层结构"><a href="#分层结构" class="headerlink" title="分层结构"></a>分层结构</h4><table><thead><tr><th>层数</th><th>名称</th></tr></thead><tbody><tr><td>7</td><td>应用层</td></tr><tr><td>6</td><td>表达层</td></tr><tr><td>5</td><td>会话层</td></tr><tr><td>4</td><td>传输层</td></tr><tr><td>3</td><td>网络层</td></tr><tr><td>2</td><td>数据链路层</td></tr><tr><td>1</td><td>物理层</td></tr></tbody></table><p>[ 物联网赎回使用 ]</p><p>1<del>3 通信子网 数据通信<br>4</del>7 资源子网 资源处理</p><h4 id="解释通信过程"><a href="#解释通信过程" class="headerlink" title="解释通信过程"></a>解释通信过程</h4><ul><li>A 主机（7 ~ 1） ——（比特流形式传输）——&gt; 中间系统（物理层 数据链路层 网络层） ——&gt; B 主机（1 ~ 7）</li><li>对应水平层级（应用层）根据协议让对应操作相对应<br><img src="https://img1.imgtp.com/2023/08/07/TvIkmgu5.png"></li></ul><h4 id="包装发送过程"><a href="#包装发送过程" class="headerlink" title="包装发送过程"></a>包装发送过程</h4><ul><li>EG |DATA|<strong>H7</strong>| 对数据加上一个（H 头部&#x2F;手部，即控制信息）形成 7-PDU</li><li>7-PDU + H6 &#x3D; 6-PDU</li><li>在第二层数据链路层 加了手部 T2+3-PDU+H2 &#x3D; 011011011…进入物理层向中间系统传输<br><img src="https://img1.imgtp.com/2023/08/07/832STkhj.png"></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> network </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>DDOS from OneWolf</title>
       <link href="/posts/d7b9a56d.html"/>
       <url>/posts/d7b9a56d.html</url>
@@ -145,17 +170,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
@@ -167,11 +181,11 @@
     
     
     <entry>
-      <title>我的朋友们</title>
-      <link href="/links/index.html"/>
-      <url>/links/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<div class="post-body">   <div id="links">      <style>         .links-content{         margin-top:1rem;         }         .link-navigation::after {         content: " ";         display: block;         clear: both;         }         .card {         width: 45%;         font-size: 1rem;         padding: 10px 20px;         border-radius: 4px;         transition-duration: 0.15s;         margin-bottom: 1rem;         display:flex;         }         .card:nth-child(odd) {         float: left;         }         .card:nth-child(even) {         float: right;         }         .card:hover {         transform: scale(1.1);         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);         }         .card a {         border:none;         }         .card .ava {         width: 7.5rem!important;         height: 6rem!important;         margin:0!important;         margin-right: 1em!important;         border-radius:4px;         }         .card .card-header {         font-style: italic;         overflow: hidden;         width: 100%;         }         .card .card-header a {         font-style: normal;         color: #2bbc8a;         font-weight: bold;         text-decoration: none;         }         .card .card-header a:hover {         color: #d480aa;         text-decoration: none;         }         .card .card-header .info {         font-style:normal;         color:#a3a3a3;         font-size:14px;         min-width: 0;         overflow: hidden;         white-space: nowrap;         }</style>      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">海盗猫猫</a>                  </div>                  <div class="info">就想和有趣的人浪费时间</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">这是图床代理先生</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">いずみ さきり</a>                  </div>                  <div class="info">哼哼~</div>               </div>            </div>         </div>      </div>   </div></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -183,6 +197,17 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的朋友们</title>
+      <link href="/links/index.html"/>
+      <url>/links/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="post-body">   <div id="links">      <style>         .links-content{         margin-top:1rem;         }         .link-navigation::after {         content: " ";         display: block;         clear: both;         }         .card {         width: 45%;         font-size: 1rem;         padding: 10px 20px;         border-radius: 4px;         transition-duration: 0.15s;         margin-bottom: 1rem;         display:flex;         }         .card:nth-child(odd) {         float: left;         }         .card:nth-child(even) {         float: right;         }         .card:hover {         transform: scale(1.1);         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);         }         .card a {         border:none;         }         .card .ava {         width: 7.5rem!important;         height: 6rem!important;         margin:0!important;         margin-right: 1em!important;         border-radius:4px;         }         .card .card-header {         font-style: italic;         overflow: hidden;         width: 100%;         }         .card .card-header a {         font-style: normal;         color: #2bbc8a;         font-weight: bold;         text-decoration: none;         }         .card .card-header a:hover {         color: #d480aa;         text-decoration: none;         }         .card .card-header .info {         font-style:normal;         color:#a3a3a3;         font-size:14px;         min-width: 0;         overflow: hidden;         white-space: nowrap;         }</style>      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">海盗猫猫</a>                  </div>                  <div class="info">就想和有趣的人浪费时间</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">这是图床代理先生</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">いずみ さきり</a>                  </div>                  <div class="info">哼哼~</div>               </div>            </div>         </div>      </div>   </div></div>]]></content>
       
     </entry>
     
