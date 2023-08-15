@@ -4,13 +4,100 @@
   
     
     <entry>
-      <title>补档</title>
-      <link href="/posts/298bb4b5.html"/>
-      <url>/posts/298bb4b5.html</url>
+      <title>如何快速解决技术问题</title>
+      <link href="/posts/64965cfb.html"/>
+      <url>/posts/64965cfb.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="如何快速解决技术问题"><a href="#如何快速解决技术问题" class="headerlink" title="如何快速解决技术问题"></a>如何快速解决技术问题</h1><h2 id="一、需要避免的问题"><a href="#一、需要避免的问题" class="headerlink" title="一、需要避免的问题"></a>一、需要避免的问题</h2><ol><li>不会搜索（不会百度？不会谷歌？不会搜狗？）</li><li>问题描述不清楚</li><li>不看教学文档</li><li>不细心（码错字 中英符号差异 错误使用空格 大小写等等）</li><li>不会看系统错误提示</li><li>…</li></ol><h2 id="二、自我解决的目的"><a href="#二、自我解决的目的" class="headerlink" title="二、自我解决的目的"></a>二、自我解决的目的</h2><ol><li>提高问题解决效率（信心）</li><li>提升解决问题能力（独立）——授之以渔</li></ol><h2 id="三、与老师之间的差距"><a href="#三、与老师之间的差距" class="headerlink" title="三、与老师之间的差距"></a>三、与老师之间的差距</h2><ol><li>很多问题是个人经验所没有的</li><li>很多思路、方法是需要学习的</li></ol><h2 id="四、解决问题的步骤"><a href="#四、解决问题的步骤" class="headerlink" title="四、解决问题的步骤"></a>四、解决问题的步骤</h2><h3 id="（一）澄清自己的问题"><a href="#（一）澄清自己的问题" class="headerlink" title="（一）澄清自己的问题"></a>（一）澄清自己的问题</h3><p>背景：我在什么情况下 遇到了什么困难<br>预期结果：我需要达成什么目的和目标<br>操作：我写了什么代码，执行了哪些命令<br>环境：我的环境是什么？操作系统和软件版本是多少<br>附件：截图 代码文件等 可以直接用于分析的线索<br>减少代词的使用</p><h3 id="（二）-思考分析问题原因在哪"><a href="#（二）-思考分析问题原因在哪" class="headerlink" title="（二） 思考分析问题原因在哪"></a>（二） 思考分析问题原因在哪</h3><p>1） 搜索技巧：<br>增减内容<br>调整语序<br>替换同义词<br>更换搜索引擎和平台<br>中英切换</p><p>2） 思考分析思维<br>成功需要那些前提？问题出在了哪个环节？</p><ul><li>排除法</li></ul><p>3） 对比思维</p><ul><li>与成功的环境，流程，内容对比</li><li>对比软件 Ultra ComPare</li><li>细心（true 高中不错 毕业把把写错）</li></ul><h3 id="（三）尝试自行解决（别慌）"><a href="#（三）尝试自行解决（别慌）" class="headerlink" title="（三）尝试自行解决（别慌）"></a>（三）尝试自行解决（别慌）</h3><p>1） 查看日志</p><ul><li>单步调试</li><li>F12</li><li>打印标量 echo ＄ sql</li><li>软件运行日志（Apache、应用软件。。。）<br>journalctl -xe<br>httpd.exe -t</li></ul><p>2） 尝试方法</p><ol><li>根据搜索结果尝试</li><li>推演流程、排除因素（控制变量）</li><li>来试试（但是注册表操作还是要慎重）</li></ol><h3 id="（四）求助老师和同学"><a href="#（四）求助老师和同学" class="headerlink" title="（四）求助老师和同学"></a>（四）求助老师和同学</h3><p>问老师 问客服 问班主任<br>我问问问问问（）<br>这是什么？老师？问一下<br>这是什么？同学？问一下<br>这是什么？辰哥？问一下</p><h3 id="（五）-反思（自己补充的）"><a href="#（五）-反思（自己补充的）" class="headerlink" title="（五） 反思（自己补充的）"></a>（五） 反思（自己补充的）</h3><p>为什么出错 为什么自己没有解决 为什么这个方法可以解决</p><h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><ol><li>教程合集可食用</li><li>搜一下就知道</li><li>信心（冷静）+耐心（尝试）+细心（对比）</li><li>问题描述清楚</li><li>提前准备好工具</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> learn skills </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> msb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何保持学习的动力（通用课-1/2）</title>
+      <link href="/posts/7316ac7e.html"/>
+      <url>/posts/7316ac7e.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="如何保持学习的动力"><a href="#如何保持学习的动力" class="headerlink" title="如何保持学习的动力"></a>如何保持学习的动力</h1><h2 id="一、明确学习的意义"><a href="#一、明确学习的意义" class="headerlink" title="一、明确学习的意义"></a>一、明确学习的意义</h2><h3 id="（一）我可以获得什么"><a href="#（一）我可以获得什么" class="headerlink" title="（一）我可以获得什么"></a>（一）我可以获得什么</h3><p>-钱 -人脉 -荣誉<br>-…</p><h3 id="（二）我将会失去什么"><a href="#（二）我将会失去什么" class="headerlink" title="（二）我将会失去什么"></a>（二）我将会失去什么</h3><p>-就业 -薪资 -未来<br>-…</p><h3 id="（三）要有信念和坚持"><a href="#（三）要有信念和坚持" class="headerlink" title="（三）要有信念和坚持"></a>（三）要有信念和坚持</h3><p>学习是一个反馈周期长 回报丰厚的过程</p><p>参考最近玩的植物大战僵尸<br>三排向日葵和阳光菇给戴夫无穷的安全感好好好<br>（前期就用土豆地雷苟着）</p><hr><h2 id="二、找到自己的标杆"><a href="#二、找到自己的标杆" class="headerlink" title="二、找到自己的标杆"></a>二、找到自己的标杆</h2><h3 id="（一）我想成为什么样的人"><a href="#（一）我想成为什么样的人" class="headerlink" title="（一）我想成为什么样的人"></a>（一）我想成为什么样的人</h3><p>我要成为黑客高手！！<br>为中国的网络安全、国家安全尽力！！</p><hr><h2 id="三、明确自己的目标"><a href="#三、明确自己的目标" class="headerlink" title="三、明确自己的目标"></a>三、明确自己的目标</h2><h3 id="（一）要有确定-清晰的学习计划"><a href="#（一）要有确定-清晰的学习计划" class="headerlink" title="（一）要有确定 清晰的学习计划"></a>（一）要有确定 清晰的学习计划</h3><p>大一结束要真正入门网络空间安全专业 水平进入本年级的 TOP5</p><h3 id="（二）要有准确-及时的学习总结"><a href="#（二）要有准确-及时的学习总结" class="headerlink" title="（二）要有准确 及时的学习总结"></a>（二）要有准确 及时的学习总结</h3><p>通过笔记和博客，反复加强理解。</p><h3 id="（三）学会分解和倒推目标"><a href="#（三）学会分解和倒推目标" class="headerlink" title="（三）学会分解和倒推目标"></a>（三）学会分解和倒推目标</h3><p>以结果为导向，而不是为了机械的上课而学习。</p><h3 id="（四）阶段性的奖励（反馈机制-延迟满足）"><a href="#（四）阶段性的奖励（反馈机制-延迟满足）" class="headerlink" title="（四）阶段性的奖励（反馈机制 延迟满足）"></a>（四）阶段性的奖励（反馈机制 延迟满足）</h3><p>把基础阶段上完后，把爪刀和短剑卖了换蝴蝶刀深红之网！！</p><h3 id="（五）加入进度计划检查"><a href="#（五）加入进度计划检查" class="headerlink" title="（五）加入进度计划检查"></a>（五）加入进度计划检查</h3><p>保持每天至少能听一节课 并且记录笔记<br>（继续坚持博客日更的习惯，内容就是课堂笔记和自我感悟）</p><h3 id="（六）保持良好的精力"><a href="#（六）保持良好的精力" class="headerlink" title="（六）保持良好的精力"></a>（六）保持良好的精力</h3><ol><li>不要熬夜（12：00）</li><li>保证充足的休息（中午半小时）</li><li>锻炼身体（长跑 upupup）</li></ol><h3 id="（七）乐于分享-一群人走得更远"><a href="#（七）乐于分享-一群人走得更远" class="headerlink" title="（七）乐于分享 一群人走得更远"></a>（七）乐于分享 一群人走得更远</h3><p>博客完全对外开放<br>积极和朋友们解决学习问题<br>急了就打电话给朋友们 （睡觉了？起来重新睡！O.o）</p><h3 id="（八）保持专注"><a href="#（八）保持专注" class="headerlink" title="（八）保持专注"></a>（八）保持专注</h3><ol><li>番茄工作法</li><li>花几分钟做点小事（正事）慢慢调动自己的学习积极性</li><li>加油加油~</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> learn skills </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> msb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计网笔记（五）</title>
+      <link href="/posts/1bfd884f.html"/>
+      <url>/posts/1bfd884f.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> network </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>补档</title>
+      <link href="/posts/298bb4b5.html"/>
+      <url>/posts/298bb4b5.html</url>
+      
+        <content type="html"><![CDATA[<p>过生日然后电脑换主板，停更了几天嘻嘻<br>今晚补上。</p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> today </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> me </tag>
+            
+        </tags>
       
     </entry>
     
@@ -244,6 +331,17 @@
     
     
     <entry>
+      <title>我的朋友们</title>
+      <link href="/links/index.html"/>
+      <url>/links/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="post-body">   <div id="links">      <style>         .links-content{         margin-top:1rem;         }         .link-navigation::after {         content: " ";         display: block;         clear: both;         }         .card {         width: 45%;         font-size: 1rem;         padding: 10px 20px;         border-radius: 4px;         transition-duration: 0.15s;         margin-bottom: 1rem;         display:flex;         }         .card:nth-child(odd) {         float: left;         }         .card:nth-child(even) {         float: right;         }         .card:hover {         transform: scale(1.1);         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);         }         .card a {         border:none;         }         .card .ava {         width: 7.5rem!important;         height: 6rem!important;         margin:0!important;         margin-right: 1em!important;         border-radius:4px;         }         .card .card-header {         font-style: italic;         overflow: hidden;         width: 100%;         }         .card .card-header a {         font-style: normal;         color: #2bbc8a;         font-weight: bold;         text-decoration: none;         }         .card .card-header a:hover {         color: #d480aa;         text-decoration: none;         }         .card .card-header .info {         font-style:normal;         color:#a3a3a3;         font-size:14px;         min-width: 0;         overflow: hidden;         white-space: nowrap;         }</style>      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">海盗猫猫</a>                  </div>                  <div class="info">就想和有趣的人浪费时间</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">这是图床代理先生</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">いずみ さきり</a>                  </div>                  <div class="info">哼哼~</div>               </div>            </div>         </div>      </div>   </div></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
@@ -260,17 +358,6 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的朋友们</title>
-      <link href="/links/index.html"/>
-      <url>/links/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="post-body">   <div id="links">      <style>         .links-content{         margin-top:1rem;         }         .link-navigation::after {         content: " ";         display: block;         clear: both;         }         .card {         width: 45%;         font-size: 1rem;         padding: 10px 20px;         border-radius: 4px;         transition-duration: 0.15s;         margin-bottom: 1rem;         display:flex;         }         .card:nth-child(odd) {         float: left;         }         .card:nth-child(even) {         float: right;         }         .card:hover {         transform: scale(1.1);         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);         }         .card a {         border:none;         }         .card .ava {         width: 7.5rem!important;         height: 6rem!important;         margin:0!important;         margin-right: 1em!important;         border-radius:4px;         }         .card .card-header {         font-style: italic;         overflow: hidden;         width: 100%;         }         .card .card-header a {         font-style: normal;         color: #2bbc8a;         font-weight: bold;         text-decoration: none;         }         .card .card-header a:hover {         color: #d480aa;         text-decoration: none;         }         .card .card-header .info {         font-style:normal;         color:#a3a3a3;         font-size:14px;         min-width: 0;         overflow: hidden;         white-space: nowrap;         }</style>      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">海盗猫猫</a>                  </div>                  <div class="info">就想和有趣的人浪费时间</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">这是图床代理先生</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">いずみ さきり</a>                  </div>                  <div class="info">哼哼~</div>               </div>            </div>         </div>      </div>   </div></div>]]></content>
       
     </entry>
     
