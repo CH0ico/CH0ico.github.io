@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Linux （6-12）查看和处理文件内容</title>
+      <link href="/posts/472f4016.html"/>
+      <url>/posts/472f4016.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="查看和处理文件内容"><a href="#查看和处理文件内容" class="headerlink" title="查看和处理文件内容"></a>查看和处理文件内容</h1><p>本章针对文本文件</p><h2 id="一、文本文件和二进制文件"><a href="#一、文本文件和二进制文件" class="headerlink" title="一、文本文件和二进制文件"></a>一、文本文件和二进制文件</h2><h3 id="（一）文本文件"><a href="#（一）文本文件" class="headerlink" title="（一）文本文件"></a>（一）文本文件</h3><ul><li>ASCII、UTF-8、Unicode、ANSI</li><li>txt、xml、conf、properties、yml 等配置文件、日志文件、源代码<br>（文本文件的二进制编码中有字符级编码使其具有可读性）</li></ul><h3 id="（二）cat"><a href="#（二）cat" class="headerlink" title="（二）cat"></a>（二）cat</h3><p>concatenate 连接<br>cat 文件名</p><h3 id="（三）more-less"><a href="#（三）more-less" class="headerlink" title="（三）more&#x2F;less"></a>（三）more&#x2F;less</h3><p>分页查看</p><table><thead><tr><th>操作</th><th>按键</th></tr></thead><tbody><tr><td>分页查看</td><td>more redis.conf</td></tr><tr><td>第三行开始显示</td><td>more +3 test.log</td></tr><tr><td>从出现 x 开始显示</td><td>more +&#x2F;x test.log</td></tr></tbody></table><p>分屏操作</p><table><thead><tr><th>操作</th><th>按键</th></tr></thead><tbody><tr><td>下一行</td><td>Enter&#x2F;箭头上下</td></tr><tr><td>下一行</td><td>y&#x2F;箭头上</td></tr><tr><td>下一屏</td><td>Space 空格&#x2F;Ctrl+F</td></tr><tr><td>上一屏</td><td>b</td></tr><tr><td>退出</td><td>q&#x2F;ctrl + c&#x2F;zz</td></tr></tbody></table><p>搜索<br>&#x2F; [查找字符] #配合 n 键，从上往下查所有<br>？[查找字符] #配合 n 键，从下往上查所有<br>（n 表示 next）<br>按 Enter 后：<br>n 键盘查找下一个符合的内容<br>N 上一个符合的内容</p><h3 id="（四）head-tail"><a href="#（四）head-tail" class="headerlink" title="（四）head&#x2F;tail"></a>（四）head&#x2F;tail</h3><p>对于行数特别多的文件</p><p>head -n 10 redis.conf 查看前十行<br>tail -n 10 info.log 查看后十行</p><p>tail -f &#x2F;var&#x2F;log&#x2F;messages<br>-f 是实时显示文件日志（监视追加内容）</p><h3 id="（五）grep"><a href="#（五）grep" class="headerlink" title="（五）grep"></a>（五）grep</h3><p>Globally search a Regular Expression and Print<br>全局搜索正则表达式（内容）并打印</p><p>格式：grep 选项 模式 文件名<br>grep choco * 在当前目录里寻找所有内容里带 choco 的文件</p><h3 id="（六）管道符号-pipe"><a href="#（六）管道符号-pipe" class="headerlink" title="（六）管道符号 pipe"></a>（六）管道符号 pipe</h3><blockquote><p>把前一个命令原本要输出到屏幕的数据当作是最后一个命令的标准输入</p></blockquote><p>command1|command2|command3</p><p>cat test.log | more -5<br>ps -ef | less -N</p><p>nestat -an | grep 3306<br>cat -n info.log | grep “debug” | more</p><h3 id="（七）wc"><a href="#（七）wc" class="headerlink" title="（七）wc"></a>（七）wc</h3><p>word count 词数统计<br>-l&#x2F;-lines 显示行数<br>-w&#x2F;-woeds 显示字数</p><p>wc -w choco.conf</p><p>显示文件数<br>ls -l | wc -l （按行显示文件名再看有几行哈哈）</p><h3 id="（八）diff"><a href="#（八）diff" class="headerlink" title="（八）diff"></a>（八）diff</h3><p>different<br>对比文件的不同</p><p>diff A.txt B.txt<br>diff -r aaa bbb</p><p>windows 的<br>文件（目录）对比：beyond compare、ultraCompare</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> msb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux (5-12)文件压缩和解压缩</title>
+      <link href="/posts/1946ed7.html"/>
+      <url>/posts/1946ed7.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="文件压缩和解压缩"><a href="#文件压缩和解压缩" class="headerlink" title="文件压缩和解压缩"></a>文件压缩和解压缩</h1><h2 id="一、打包和压缩的区别"><a href="#一、打包和压缩的区别" class="headerlink" title="一、打包和压缩的区别"></a>一、打包和压缩的区别</h2><h3 id="（一）打包"><a href="#（一）打包" class="headerlink" title="（一）打包"></a>（一）打包</h3><p>把多个文件变成一个文件—减少文件个数</p><p><strong>打包&#x2F;解包</strong><br>pack&#x2F;unpack</p><ul><li>减少传输次数</li><li>归档利于管理</li></ul><h3 id="（二）压缩"><a href="#（二）压缩" class="headerlink" title="（二）压缩"></a>（二）压缩</h3><p>缩小文件体积—减小文件体积</p><h4 id="1-压缩-解压"><a href="#1-压缩-解压" class="headerlink" title="1. 压缩&#x2F;解压"></a>1. 压缩&#x2F;解压</h4><p>compress&#x2F;decompress</p><ul><li>图片：BMP GIF JPEG JPG</li><li>音频：APE FLAC MP3</li><li>视频：RMVB AVI MP4</li></ul><p>压缩率：压缩后体积&#x2F;压缩前体积</p><h4 id="2-其他作用"><a href="#2-其他作用" class="headerlink" title="2. 其他作用"></a>2. 其他作用</h4><p>添加密码</p><p>注意：打包解包、压缩解压都需要时间</p><p>用时间换空间</p><h3 id="（三）常见的压缩格式"><a href="#（三）常见的压缩格式" class="headerlink" title="（三）常见的压缩格式"></a>（三）常见的压缩格式</h3><h4 id="1-HTTP-gzip"><a href="#1-HTTP-gzip" class="headerlink" title="1. HTTP:gzip"></a>1. HTTP:gzip</h4><p>gzip，deflate（zlib），br（Brotli），identity（不压缩）</p><h4 id="2-Windows-gzip、rar、7z"><a href="#2-Windows-gzip、rar、7z" class="headerlink" title="2. Windows:gzip、rar、7z"></a>2. Windows:gzip、rar、7z</h4><p>winrar，360 压缩，bandzip，7zip</p><h4 id="3-Linux-gzip（tar-gz-tgz）、bzip-bz2）、-zip"><a href="#3-Linux-gzip（tar-gz-tgz）、bzip-bz2）、-zip" class="headerlink" title="3. Linux:gzip（tar.gz&#x3D;.tgz）、bzip(.bz2）、 zip"></a>3. Linux:gzip（tar.gz&#x3D;.tgz）、bzip(.bz2）、 zip</h4><p>压缩后体积： tar.bz2&gt;tgz&gt;tar<br>压缩解压时间：tar.bz2&gt;tar&gt;tgz</p><hr><h2 id="二、常见的压缩格式"><a href="#二、常见的压缩格式" class="headerlink" title="二、常见的压缩格式"></a>二、常见的压缩格式</h2><h3 id="1-HTTP-gzip-1"><a href="#1-HTTP-gzip-1" class="headerlink" title="1. HTTP:gzip"></a>1. HTTP:gzip</h3><p>gzip，deflate（zlib），br（Brotli），identity（不压缩）</p><h3 id="2-Windows-gzip、rar、7z-1"><a href="#2-Windows-gzip、rar、7z-1" class="headerlink" title="2. Windows:gzip、rar、7z"></a>2. Windows:gzip、rar、7z</h3><p>winrar，360 压缩，bandzip，7zip</p><h3 id="3-Linux-gzip（tar-gz-tgz）、bzip-bz2）、-zip-1"><a href="#3-Linux-gzip（tar-gz-tgz）、bzip-bz2）、-zip-1" class="headerlink" title="3. Linux:gzip（tar.gz&#x3D;.tgz）、bzip(.bz2）、 zip"></a>3. Linux:gzip（tar.gz&#x3D;.tgz）、bzip(.bz2）、 zip</h3><p>压缩后体积： tar.bz2&gt;tgz&gt;tar<br>压缩解压时间：tar.bz2&gt;tar&gt;tgz</p><hr><h2 id="三、tar-常用选项及示例"><a href="#三、tar-常用选项及示例" class="headerlink" title="三、tar 常用选项及示例"></a>三、tar 常用选项及示例</h2><p>tar: tape archive （磁带+归档）<br>打包的出来的是红色的.tar 文件</p><p><img src="https://img1.imgtp.com/2023/08/21/3wb8K2Tw.png"></p><p><img src="https://img1.imgtp.com/2023/08/21/NBFDH2sy.png"><br>创建 11 个 txt 文件：touch {0..10}.txt<br>打包：tar -cvf test0110.tar _.txt<br>解包：tar -xvf test0110.tar<br>打包并压缩：tar -czvf test0110.tar.gz _.txt<br>解压： tar -xzvf test0110.tar.gz</p><p><img src="https://img1.imgtp.com/2023/08/21/9oG4iXRP.png"></p><hr><h2 id="四、zip-命令"><a href="#四、zip-命令" class="headerlink" title="四、zip 命令"></a>四、zip 命令</h2><h3 id="（一）用法示例"><a href="#（一）用法示例" class="headerlink" title="（一）用法示例"></a>（一）用法示例</h3><p><img src="https://img1.imgtp.com/2023/08/21/ngogy0KW.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> msb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux  (4-12)文件和目录管理</title>
       <link href="/posts/9ce2435.html"/>
       <url>/posts/9ce2435.html</url>
@@ -517,22 +567,22 @@
     
     
     <entry>
-      <title>友链</title>
-      <link href="/links/index.html"/>
-      <url>/links/index.html</url>
+      <title>sayings</title>
+      <link href="/sayings/index.html"/>
+      <url>/sayings/index.html</url>
       
-        <content type="html"><![CDATA[<div class="post-body">   <div id="links">      <style>         .links-content{         margin-top:1rem;         }         .link-navigation::after {         content: " ";         display: block;         clear: both;         }         .card {         width: 45%;         font-size: 1rem;         padding: 10px 20px;         border-radius: 4px;         transition-duration: 0.15s;         margin-bottom: 1rem;         display:flex;         }         .card:nth-child(odd) {         float: left;         }         .card:nth-child(even) {         float: right;         }         .card:hover {         transform: scale(1.1);         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);         }         .card a {         border:none;         }         .card .ava {         width: 7.5rem!important;         height: 6rem!important;         margin:0!important;         margin-right: 1em!important;         border-radius:4px;         }         .card .card-header {         font-style: italic;         overflow: hidden;         width: 100%;         }         .card .card-header a {         font-style: normal;         color: #2bbc8a;         font-weight: bold;         text-decoration: none;         }         .card .card-header a:hover {         color: #d480aa;         text-decoration: none;         }         .card .card-header .info {         font-style:normal;         color:#a3a3a3;         font-size:14px;         min-width: 0;         overflow: hidden;         white-space: nowrap;         }</style>      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">海盗猫猫</a>                  </div>                  <div class="info">就想和有趣的人浪费时间</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">这是图床代理先生</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">いずみ さきり</a>                  </div>                  <div class="info">哼哼~</div>               </div>            </div>         </div>      </div>   </div></div>]]></content>
+        <content type="html"><![CDATA[<html><head></head><body><style>/* CSS��ʽ */</style><div class="post-body">   <div id="links">      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">����èè</a>                  </div>                  <div class="info">�������Ȥ�����˷�ʱ��</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">����ͼ����������</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">������ ������</a>                  </div>                  <div class="info">�ߺ�~</div>               </div>            </div>         </div>      </div>   </div></div></body></html>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>sayings</title>
-      <link href="/sayings/index.html"/>
-      <url>/sayings/index.html</url>
+      <title>友链</title>
+      <link href="/links/index.html"/>
+      <url>/links/index.html</url>
       
-        <content type="html"><![CDATA[<html><head></head><body><style>/* CSS��ʽ */</style><div class="post-body">   <div id="links">      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">����èè</a>                  </div>                  <div class="info">�������Ȥ�����˷�ʱ��</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">����ͼ����������</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">������ ������</a>                  </div>                  <div class="info">�ߺ�~</div>               </div>            </div>         </div>      </div>   </div></div></body></html>]]></content>
+        <content type="html"><![CDATA[<div class="post-body">   <div id="links">      <style>         .links-content{         margin-top:1rem;         }         .link-navigation::after {         content: " ";         display: block;         clear: both;         }         .card {         width: 45%;         font-size: 1rem;         padding: 10px 20px;         border-radius: 4px;         transition-duration: 0.15s;         margin-bottom: 1rem;         display:flex;         }         .card:nth-child(odd) {         float: left;         }         .card:nth-child(even) {         float: right;         }         .card:hover {         transform: scale(1.1);         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);         }         .card a {         border:none;         }         .card .ava {         width: 7.5rem!important;         height: 6rem!important;         margin:0!important;         margin-right: 1em!important;         border-radius:4px;         }         .card .card-header {         font-style: italic;         overflow: hidden;         width: 100%;         }         .card .card-header a {         font-style: normal;         color: #2bbc8a;         font-weight: bold;         text-decoration: none;         }         .card .card-header a:hover {         color: #d480aa;         text-decoration: none;         }         .card .card-header .info {         font-style:normal;         color:#a3a3a3;         font-size:14px;         min-width: 0;         overflow: hidden;         white-space: nowrap;         }</style>      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">海盗猫猫</a>                  </div>                  <div class="info">就想和有趣的人浪费时间</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">这是图床代理先生</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">いずみ さきり</a>                  </div>                  <div class="info">哼哼~</div>               </div>            </div>         </div>      </div>   </div></div>]]></content>
       
     </entry>
     

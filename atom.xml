@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-08-21T08:20:22.811Z</updated>
+  <updated>2023-08-21T15:46:35.067Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux （6-12）查看和处理文件内容</title>
+    <link href="http://example.com/posts/472f4016.html"/>
+    <id>http://example.com/posts/472f4016.html</id>
+    <published>2023-08-21T15:45:25.000Z</published>
+    <updated>2023-08-21T15:46:35.067Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="查看和处理文件内容"><a href="#查看和处理文件内容" class="headerlink" title="查看和处理文件内容"></a>查看和处理文件内容</h1><p>本章针对文本文件</p><h2 id="一、文本文件和二进制文件"><a href="#一、文本文件和二进制文件" class="headerlink" title="一、文本文件和二进制文件"></a>一、文本文件和二进制文件</h2><h3 id="（一）文本文件"><a href="#（一）文本文件" class="headerlink" title="（一）文本文件"></a>（一）文本文件</h3><ul><li>ASCII、UTF-8、Unicode、ANSI</li><li>txt、xml、conf、properties、yml 等配置文件、日志文件、源代码<br>（文本文件的二进制编码中有字符级编码使其具有可读性）</li></ul><h3 id="（二）cat"><a href="#（二）cat" class="headerlink" title="（二）cat"></a>（二）cat</h3><p>concatenate 连接<br>cat 文件名</p><h3 id="（三）more-less"><a href="#（三）more-less" class="headerlink" title="（三）more&#x2F;less"></a>（三）more&#x2F;less</h3><p>分页查看</p><table><thead><tr><th>操作</th><th>按键</th></tr></thead><tbody><tr><td>分页查看</td><td>more redis.conf</td></tr><tr><td>第三行开始显示</td><td>more +3 test.log</td></tr><tr><td>从出现 x 开始显示</td><td>more +&#x2F;x test.log</td></tr></tbody></table><p>分屏操作</p><table><thead><tr><th>操作</th><th>按键</th></tr></thead><tbody><tr><td>下一行</td><td>Enter&#x2F;箭头上下</td></tr><tr><td>下一行</td><td>y&#x2F;箭头上</td></tr><tr><td>下一屏</td><td>Space 空格&#x2F;Ctrl+F</td></tr><tr><td>上一屏</td><td>b</td></tr><tr><td>退出</td><td>q&#x2F;ctrl + c&#x2F;zz</td></tr></tbody></table><p>搜索<br>&#x2F; [查找字符] #配合 n 键，从上往下查所有<br>？[查找字符] #配合 n 键，从下往上查所有<br>（n 表示 next）<br>按 Enter 后：<br>n 键盘查找下一个符合的内容<br>N 上一个符合的内容</p><h3 id="（四）head-tail"><a href="#（四）head-tail" class="headerlink" title="（四）head&#x2F;tail"></a>（四）head&#x2F;tail</h3><p>对于行数特别多的文件</p><p>head -n 10 redis.conf 查看前十行<br>tail -n 10 info.log 查看后十行</p><p>tail -f &#x2F;var&#x2F;log&#x2F;messages<br>-f 是实时显示文件日志（监视追加内容）</p><h3 id="（五）grep"><a href="#（五）grep" class="headerlink" title="（五）grep"></a>（五）grep</h3><p>Globally search a Regular Expression and Print<br>全局搜索正则表达式（内容）并打印</p><p>格式：grep 选项 模式 文件名<br>grep choco * 在当前目录里寻找所有内容里带 choco 的文件</p><h3 id="（六）管道符号-pipe"><a href="#（六）管道符号-pipe" class="headerlink" title="（六）管道符号 pipe"></a>（六）管道符号 pipe</h3><blockquote><p>把前一个命令原本要输出到屏幕的数据当作是最后一个命令的标准输入</p></blockquote><p>command1|command2|command3</p><p>cat test.log | more -5<br>ps -ef | less -N</p><p>nestat -an | grep 3306<br>cat -n info.log | grep “debug” | more</p><h3 id="（七）wc"><a href="#（七）wc" class="headerlink" title="（七）wc"></a>（七）wc</h3><p>word count 词数统计<br>-l&#x2F;-lines 显示行数<br>-w&#x2F;-woeds 显示字数</p><p>wc -w choco.conf</p><p>显示文件数<br>ls -l | wc -l （按行显示文件名再看有几行哈哈）</p><h3 id="（八）diff"><a href="#（八）diff" class="headerlink" title="（八）diff"></a>（八）diff</h3><p>different<br>对比文件的不同</p><p>diff A.txt B.txt<br>diff -r aaa bbb</p><p>windows 的<br>文件（目录）对比：beyond compare、ultraCompare</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;查看和处理文件内容&quot;&gt;&lt;a href=&quot;#查看和处理文件内容&quot; class=&quot;headerlink&quot; title=&quot;查看和处理文件内容&quot;&gt;&lt;/a&gt;查看和处理文件内容&lt;/h1&gt;&lt;p&gt;本章针对文本文件&lt;/p&gt;
+&lt;h2 id=&quot;一、文本文件和二进制文件&quot;&gt;&lt;a href</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    
+    
+    <category term="msb" scheme="http://example.com/tags/msb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux (5-12)文件压缩和解压缩</title>
+    <link href="http://example.com/posts/1946ed7.html"/>
+    <id>http://example.com/posts/1946ed7.html</id>
+    <published>2023-08-21T13:47:58.000Z</published>
+    <updated>2023-08-21T13:49:32.942Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="文件压缩和解压缩"><a href="#文件压缩和解压缩" class="headerlink" title="文件压缩和解压缩"></a>文件压缩和解压缩</h1><h2 id="一、打包和压缩的区别"><a href="#一、打包和压缩的区别" class="headerlink" title="一、打包和压缩的区别"></a>一、打包和压缩的区别</h2><h3 id="（一）打包"><a href="#（一）打包" class="headerlink" title="（一）打包"></a>（一）打包</h3><p>把多个文件变成一个文件—减少文件个数</p><p><strong>打包&#x2F;解包</strong><br>pack&#x2F;unpack</p><ul><li>减少传输次数</li><li>归档利于管理</li></ul><h3 id="（二）压缩"><a href="#（二）压缩" class="headerlink" title="（二）压缩"></a>（二）压缩</h3><p>缩小文件体积—减小文件体积</p><h4 id="1-压缩-解压"><a href="#1-压缩-解压" class="headerlink" title="1. 压缩&#x2F;解压"></a>1. 压缩&#x2F;解压</h4><p>compress&#x2F;decompress</p><ul><li>图片：BMP GIF JPEG JPG</li><li>音频：APE FLAC MP3</li><li>视频：RMVB AVI MP4</li></ul><p>压缩率：压缩后体积&#x2F;压缩前体积</p><h4 id="2-其他作用"><a href="#2-其他作用" class="headerlink" title="2. 其他作用"></a>2. 其他作用</h4><p>添加密码</p><p>注意：打包解包、压缩解压都需要时间</p><p>用时间换空间</p><h3 id="（三）常见的压缩格式"><a href="#（三）常见的压缩格式" class="headerlink" title="（三）常见的压缩格式"></a>（三）常见的压缩格式</h3><h4 id="1-HTTP-gzip"><a href="#1-HTTP-gzip" class="headerlink" title="1. HTTP:gzip"></a>1. HTTP:gzip</h4><p>gzip，deflate（zlib），br（Brotli），identity（不压缩）</p><h4 id="2-Windows-gzip、rar、7z"><a href="#2-Windows-gzip、rar、7z" class="headerlink" title="2. Windows:gzip、rar、7z"></a>2. Windows:gzip、rar、7z</h4><p>winrar，360 压缩，bandzip，7zip</p><h4 id="3-Linux-gzip（tar-gz-tgz）、bzip-bz2）、-zip"><a href="#3-Linux-gzip（tar-gz-tgz）、bzip-bz2）、-zip" class="headerlink" title="3. Linux:gzip（tar.gz&#x3D;.tgz）、bzip(.bz2）、 zip"></a>3. Linux:gzip（tar.gz&#x3D;.tgz）、bzip(.bz2）、 zip</h4><p>压缩后体积： tar.bz2&gt;tgz&gt;tar<br>压缩解压时间：tar.bz2&gt;tar&gt;tgz</p><hr><h2 id="二、常见的压缩格式"><a href="#二、常见的压缩格式" class="headerlink" title="二、常见的压缩格式"></a>二、常见的压缩格式</h2><h3 id="1-HTTP-gzip-1"><a href="#1-HTTP-gzip-1" class="headerlink" title="1. HTTP:gzip"></a>1. HTTP:gzip</h3><p>gzip，deflate（zlib），br（Brotli），identity（不压缩）</p><h3 id="2-Windows-gzip、rar、7z-1"><a href="#2-Windows-gzip、rar、7z-1" class="headerlink" title="2. Windows:gzip、rar、7z"></a>2. Windows:gzip、rar、7z</h3><p>winrar，360 压缩，bandzip，7zip</p><h3 id="3-Linux-gzip（tar-gz-tgz）、bzip-bz2）、-zip-1"><a href="#3-Linux-gzip（tar-gz-tgz）、bzip-bz2）、-zip-1" class="headerlink" title="3. Linux:gzip（tar.gz&#x3D;.tgz）、bzip(.bz2）、 zip"></a>3. Linux:gzip（tar.gz&#x3D;.tgz）、bzip(.bz2）、 zip</h3><p>压缩后体积： tar.bz2&gt;tgz&gt;tar<br>压缩解压时间：tar.bz2&gt;tar&gt;tgz</p><hr><h2 id="三、tar-常用选项及示例"><a href="#三、tar-常用选项及示例" class="headerlink" title="三、tar 常用选项及示例"></a>三、tar 常用选项及示例</h2><p>tar: tape archive （磁带+归档）<br>打包的出来的是红色的.tar 文件</p><p><img src="https://img1.imgtp.com/2023/08/21/3wb8K2Tw.png"></p><p><img src="https://img1.imgtp.com/2023/08/21/NBFDH2sy.png"><br>创建 11 个 txt 文件：touch {0..10}.txt<br>打包：tar -cvf test0110.tar _.txt<br>解包：tar -xvf test0110.tar<br>打包并压缩：tar -czvf test0110.tar.gz _.txt<br>解压： tar -xzvf test0110.tar.gz</p><p><img src="https://img1.imgtp.com/2023/08/21/9oG4iXRP.png"></p><hr><h2 id="四、zip-命令"><a href="#四、zip-命令" class="headerlink" title="四、zip 命令"></a>四、zip 命令</h2><h3 id="（一）用法示例"><a href="#（一）用法示例" class="headerlink" title="（一）用法示例"></a>（一）用法示例</h3><p><img src="https://img1.imgtp.com/2023/08/21/ngogy0KW.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;文件压缩和解压缩&quot;&gt;&lt;a href=&quot;#文件压缩和解压缩&quot; class=&quot;headerlink&quot; title=&quot;文件压缩和解压缩&quot;&gt;&lt;/a&gt;文件压缩和解压缩&lt;/h1&gt;&lt;h2 id=&quot;一、打包和压缩的区别&quot;&gt;&lt;a href=&quot;#一、打包和压缩的区别&quot; class=&quot;</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    
+    
+    <category term="msb" scheme="http://example.com/tags/msb/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux  (4-12)文件和目录管理</title>
@@ -45,7 +94,7 @@
     <link href="http://example.com/posts/f86f1ce9.html"/>
     <id>http://example.com/posts/f86f1ce9.html</id>
     <published>2023-08-19T12:41:49.588Z</published>
-    <updated>2023-08-19T14:47:01.694Z</updated>
+    <updated>2023-08-21T13:49:05.863Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Linux-基础知识"><a href="#Linux-基础知识" class="headerlink" title="Linux 基础知识"></a>Linux 基础知识</h1><h2 id="一、Linux-体系结构"><a href="#一、Linux-体系结构" class="headerlink" title="一、Linux 体系结构"></a>一、Linux 体系结构</h2><h3 id="（一）内核"><a href="#（一）内核" class="headerlink" title="（一）内核"></a>（一）内核</h3><p>用来管理进程，内存，驱动，文件和网络<br>是系统的核心</p><h3 id="（二）Shell"><a href="#（二）Shell" class="headerlink" title="（二）Shell"></a>（二）Shell</h3><blockquote><p>接收用户的命令，经过转换，交给内核去执行<br>cat –&gt; open（）read（）<br>win 的 cmd powershell 也是 shell 工具</p></blockquote><h4 id="1）好处"><a href="#1）好处" class="headerlink" title="1）好处"></a>1）好处</h4><ol><li>简化操作</li><li>安全</li></ol><h4 id="2）查询"><a href="#2）查询" class="headerlink" title="2）查询"></a>2）查询</h4><p>CentOS 自带，可以外加<br>echo $SHELL 命令查询（输出 bin&#x2F;bash）<br>cat &#x2F;etc&#x2F;shells 命令查询</p><h4 id="3）更改"><a href="#3）更改" class="headerlink" title="3）更改"></a>3）更改</h4><p>chsh -l 查看可选项目 (change shell list)<br>chsh -s &#x2F;bin&#x2F;csh&#x2F;</p><p>-terminal 是对 shell 再次封装建立的图形化操作界面<br><img src="https://img1.imgtp.com/2023/08/18/3nVV6zsD.png"></p><h4 id="4）shell-编程-Shell-脚本（-sh）"><a href="#4）shell-编程-Shell-脚本（-sh）" class="headerlink" title="4）shell 编程&#x2F;Shell 脚本（.sh）"></a>4）shell 编程&#x2F;Shell 脚本（.sh）</h4><hr><h3 id="（三）文件系统"><a href="#（三）文件系统" class="headerlink" title="（三）文件系统"></a>（三）文件系统</h3><blockquote><p>一切皆文件</p></blockquote><h4 id="1-文件简单操作"><a href="#1-文件简单操作" class="headerlink" title="1. 文件简单操作"></a>1. 文件简单操作</h4><ul><li>普通文件、目录、进程（&#x2F;proc）、输入输出设备（&#x2F;dev）、网络字节流 socket、链接文件、管道文件</li></ul><table><thead><tr><th>查看文件</th><th>作用</th></tr></thead><tbody><tr><td>losf &#x2F;bin&#x2F;bash</td><td>查找某个文件相关的进程</td></tr><tr><td>lsof -u root</td><td>列出某个用户打开的文件信息</td></tr><tr><td>lsof -c redis</td><td>列出某个程序进程所打开的文件信息</td></tr><tr><td>lsof -i tcp</td><td>列出所有 tcp 网络连接信息</td></tr></tbody></table><h4 id="2-文件基本知识（了解）"><a href="#2-文件基本知识（了解）" class="headerlink" title="2. 文件基本知识（了解）"></a>2. 文件基本知识（了解）</h4><p>Linux 没有盘符概念，只有很多的文件夹<br>存在根目录<br>&#x2F; 是目录分隔符</p><ul><li>蓝色：目录</li><li>绿色：可执行文件</li><li>红色：压缩文件</li><li>浅蓝色：链接文件</li><li>白色：其他文件</li></ul><h4 id="3-根目录操作（理解）"><a href="#3-根目录操作（理解）" class="headerlink" title="3. 根目录操作（理解）"></a>3. 根目录操作（理解）</h4><ul><li>bin 存放普通用户可执行指令</li><li>boot 开机引导目录</li><li>dev 设备目录</li><li>etc 各种配置文件</li><li>lib 库文件存放地点，bin 和 sbin 需要的库文件</li><li>media 可以出设备挂载目录</li><li>mnt 用户临时挂载其他的文件系统</li><li>opt 第三方软件安装程序（建议放在&#x2F;user&#x2F;local 中）</li><li>proc 虚拟文件系统</li><li>root 系统管理员目录（除 root 之外，其他用户均放置在&#x2F;home 目录下）</li><li>run 系统运行时所需文件</li><li>sbin 只有 root 才能运行的管理指令</li><li>srv 服务启动后所需要访问的数据目录</li><li>sys 跟 proc 意义，虚拟文件系统</li><li>tmp 存放临时文件目录</li><li>usr 应用程序放置目录</li><li>var 存放系统执行过程经常改变的文件</li></ul><h4 id="4-用户主目录"><a href="#4-用户主目录" class="headerlink" title="4. 用户主目录"></a>4. 用户主目录</h4><p>主目录： home directory<br>root 用户的主目录是 &#x2F;root<br>其他用户的主目录是 &#x2F;home&#x2F;用户名</p><p>cd 空格 或者 cd ~</p><p>工作目录： working directory</p><h4 id="5-目录指代"><a href="#5-目录指代" class="headerlink" title="5. 目录指代"></a>5. 目录指代</h4><ul><li>绝对路径</li><li>相对路径</li><li>&#x2F; 根目录</li><li>. 代表当前目录</li><li>~ 代表用户工作目录</li><li>..&#x2F; 代表上一级目录</li><li>..&#x2F;..&#x2F; 上上级目录</li></ul><p>同时执行： ；分号<br>查询当前目录：pwd</p><p>只有目录后面可以带着&#x2F; 如 home&#x2F;</p><hr><h2 id="二、常用操作"><a href="#二、常用操作" class="headerlink" title="二、常用操作"></a>二、常用操作</h2><h3 id="（一）命令操作"><a href="#（一）命令操作" class="headerlink" title="（一）命令操作"></a>（一）命令操作</h3><p>man command (manual)<br>whatis command<br>info command<br>help command</p><h3 id="（二）用户操作"><a href="#（二）用户操作" class="headerlink" title="（二）用户操作"></a>（二）用户操作</h3><p><strong>关机</strong>：<br>poweroff<br>shutdown -h now<br>halt</p><p><strong>重启</strong>：<br>reboot</p><h3 id="（三）快捷键和命令"><a href="#（三）快捷键和命令" class="headerlink" title="（三）快捷键和命令"></a>（三）快捷键和命令</h3><ul><li><p>Tab 补全命令和目录（自动提示）</p></li><li><p>方向键 上&#x2F;下一条命令</p></li><li><p>Ctrl+Insert 复制*（Ctrl SHift C）</p></li><li><p>Shift+Insert 黏贴（Ctrl+Shift+V）</p></li><li><p>Alt+Insert 复制并黏贴</p></li><li><p>Ctrl+E 光标移动到行尾</p></li><li><p>Ctrl+A 光标移动到行首</p></li><li><p>Ctrl+K 清楚光标后行至行尾的内容</p></li><li><p>Ctrl+U 清除光标前至行首 间的所有内容<br>（EU or AK 就是全行）</p></li><li><p>Ctrl+R 搜索模式</p></li><li><p>！cd： 重复执行最近一次的命令</p></li><li><p>clear： 清屏（只是页面向下自动滑动）</p></li><li><p>history： 查看历史命令</p></li><li><p>history： 清除历史命令（新建会话 history 仍然可见）</p></li></ul><p>彻底清除历史命令：</p><ul><li>echo &gt; ~&#x2F;.bash_history (CentOS)</li><li>echo &gt; ~&#x2F;.zsh_history (Kali)</li></ul><h3 id="（四）别名配置-alias"><a href="#（四）别名配置-alias" class="headerlink" title="（四）别名配置 alias"></a>（四）别名配置 alias</h3><ul><li><p>查看别名： alias</p></li><li><p>设置别名： vim ~&#x2F;.bashrc</p></li><li><p>格式： alias short&#x3D;‘xxx；xxx’</p></li><li><p>读取并执行命令，使之生效：source ~&#x2F;.bashrc</p></li></ul><h3 id="（五）通配符"><a href="#（五）通配符" class="headerlink" title="（五）通配符"></a>（五）通配符</h3><table><thead><tr><th>符号</th><th>指代</th></tr></thead><tbody><tr><td>*</td><td>任意字符</td></tr><tr><td>？</td><td>单个字符</td></tr><tr><td>[]</td><td>匹配范围内的，比如 [0-9] [a-z]</td></tr><tr><td>{}</td><td>多个以 xx 结尾的文件 {<em>.log，</em>.txt}</td></tr><tr><td>^</td><td>取反 不是 xx 结尾的文件 *[ ^ txt]</td></tr></tbody></table><h3 id="（六）环境变量"><a href="#（六）环境变量" class="headerlink" title="（六）环境变量"></a>（六）环境变量</h3><h4 id="1）环境变量的作用"><a href="#1）环境变量的作用" class="headerlink" title="1）环境变量的作用"></a>1）环境变量的作用</h4><p>告诉操作系统去哪里找到用户想要的文件<br>“编辑系统的环境变量” “高级” 分为用户变量（单用户）和系统变量<br>path 路径配置可执行程序的路径</p><h4 id="2）操作指令"><a href="#2）操作指令" class="headerlink" title="2）操作指令"></a>2）操作指令</h4><ul><li>查看全部变量： env</li><li>查看单个变量： echo $XX</li><li>用户 变量： ~&#x2F;.bashrc</li><li>系统 变量： &#x2F;etc&#x2F;profile</li></ul><h4 id="3）设置环境变量"><a href="#3）设置环境变量" class="headerlink" title="3）设置环境变量"></a>3）设置环境变量</h4><p>（以配置 JDK 为例）<br>vim &#x2F;etc&#x2F;profile</p><p>export JAVA_HOME&#x3D;&#x2F;user&#x2F;local&#x2F;soft&#x2F;java&#x2F;jdk1.8.0_74<br>export PATH&#x3D;$JAVA_HOME&#x2F;bin:$PATH<br>export CLASSPATH&#x3D;.:$JAVA_HOME&#x2F;lib&#x2F;dt.jar:$JAVA_HOME&#x2F;lib&#x2F;tools.jar</p><p>读取并执行命令，使之生效：source &#x2F;etc&#x2F;profile</p><hr><h2 id="三、文件描述符和重定向"><a href="#三、文件描述符和重定向" class="headerlink" title="三、文件描述符和重定向"></a>三、文件描述符和重定向</h2><h3 id="（一）文件描述符"><a href="#（一）文件描述符" class="headerlink" title="（一）文件描述符"></a>（一）文件描述符</h3><p>File Descriptor（系统自带的）</p><h4 id="1）描述符"><a href="#1）描述符" class="headerlink" title="1）描述符"></a>1）描述符</h4><table><thead><tr><th>ID</th><th>描述</th><th>设备</th><th></th></tr></thead><tbody><tr><td>0</td><td>标准输入 stdin</td><td>键盘</td><td>默认输入值</td></tr><tr><td>1</td><td>标准输出 stiout</td><td>显示器</td><td>默认输出值</td></tr><tr><td>2</td><td>标准错误输出 stderr</td><td>显示器</td><td></td></tr></tbody></table><h4 id="2）重定向符号"><a href="#2）重定向符号" class="headerlink" title="2）重定向符号"></a>2）重定向符号</h4><blockquote><p>重定向：改变输入输出的方向</p></blockquote><ol><li><blockquote><p>和&gt;&gt; 输出重定向</p></blockquote></li><li>&amp;&gt; 表示将一个流（stream）重定向到另一个文件描述符（f d）</li><li>&lt;和&lt;&lt; 输入重定向</li></ol><p><img src="https://img1.imgtp.com/2023/08/19/84rEe79G.png" alt="为什么不问问神奇海螺呢"></p><h4 id="3）输出重定向"><a href="#3）输出重定向" class="headerlink" title="3）输出重定向"></a>3）输出重定向</h4><p><img src="https://img1.imgtp.com/2023/08/19/tceBwG3Q.png"></p><h4 id="4）输入重定向"><a href="#4）输入重定向" class="headerlink" title="4）输入重定向"></a>4）输入重定向</h4><p><img src="https://img1.imgtp.com/2023/08/19/ZS9mX9zo.png"><br>（0.1 是可以省略的）</p><hr>]]></content>
     
@@ -439,50 +488,6 @@
     
     
     <category term="me" scheme="http://example.com/tags/me/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1/8/2023 日志</title>
-    <link href="http://example.com/posts/a9fc76fb.html"/>
-    <id>http://example.com/posts/a9fc76fb.html</id>
-    <published>2023-08-01T02:16:09.000Z</published>
-    <updated>2023-08-02T15:08:11.550Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="更新-live2D-LeanCloud-以及-留言板"><a href="#更新-live2D-LeanCloud-以及-留言板" class="headerlink" title="更新 live2D LeanCloud 以及 留言板"></a>更新 live2D LeanCloud 以及 留言板</h2><h2 id="鲤鱼王也转入我院了-殊途同归"><a href="#鲤鱼王也转入我院了-殊途同归" class="headerlink" title="鲤鱼王也转入我院了 殊途同归"></a>鲤鱼王也转入我院了 殊途同归</h2><hr>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;更新-live2D-LeanCloud-以及-留言板&quot;&gt;&lt;a href=&quot;#更新-live2D-LeanCloud-以及-留言板&quot; class=&quot;headerlink&quot; title=&quot;更新 live2D LeanCloud 以及 留言板&quot;&gt;&lt;/a&gt;更新 live2</summary>
-      
-    
-    
-    
-    <category term="today" scheme="http://example.com/categories/today/"/>
-    
-    
-    <category term="we" scheme="http://example.com/tags/we/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/posts/4a17b156.html"/>
-    <id>http://example.com/posts/4a17b156.html</id>
-    <published>2023-07-31T05:56:25.957Z</published>
-    <updated>2023-08-01T07:29:34.573Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
     
   </entry>
   
