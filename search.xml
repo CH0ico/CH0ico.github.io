@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Linux(8-12) 安装软件</title>
+      <link href="/posts/da49afd9.html"/>
+      <url>/posts/da49afd9.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Linux-安装软件"><a href="#Linux-安装软件" class="headerlink" title="Linux 安装软件"></a>Linux 安装软件</h1><h2 id="一、软件为什么需要安装"><a href="#一、软件为什么需要安装" class="headerlink" title="一、软件为什么需要安装"></a>一、软件为什么需要安装</h2><h3 id="（一）windows-软件安装"><a href="#（一）windows-软件安装" class="headerlink" title="（一）windows 软件安装"></a>（一）windows 软件安装</h3><ol><li>安装检查</li><li>释放文件</li><li>复制可执行文件</li><li>DLL 动态链接库&#x2F;安装服务</li><li>注册表</li><li>开始菜单和快捷方式</li></ol><p>“绿色软件”对环境配置要求低，可以直接用 exe 运行</p><h3 id="（二）Linux-可执行程序"><a href="#（二）Linux-可执行程序" class="headerlink" title="（二）Linux 可执行程序"></a>（二）Linux 可执行程序</h3><p>&#x2F;bin<br>&#x2F;sbin<br>&#x2F;usr&#x2F;bin<br>&#x2F;usr&#x2F;sbin<br>（有可执行权限就可以执行，不需要后缀，操作系统通过文件头来识别文件）</p><hr><h2 id="二、脚本和程序的区别"><a href="#二、脚本和程序的区别" class="headerlink" title="二、脚本和程序的区别"></a>二、脚本和程序的区别</h2><p>不需要编译的：javascipt、python、ruby（跨平台特性）<br>需要编译的：C、C++、Swift、Kotlin、Go..</p><p>解释型：边解释边执行<br>编译型：（编译成二进制文件）计算机可以直接执行</p><hr><h2 id="三、Linux-安装软件得到几种方式"><a href="#三、Linux-安装软件得到几种方式" class="headerlink" title="三、Linux 安装软件得到几种方式"></a>三、Linux 安装软件得到几种方式</h2><h3 id="（一）方式总览"><a href="#（一）方式总览" class="headerlink" title="（一）方式总览"></a>（一）方式总览</h3><p>源码编译 make、<br>rpm、deb、yum、apt、Docker</p><h3 id="（二）主要派系"><a href="#（二）主要派系" class="headerlink" title="（二）主要派系"></a>（二）主要派系</h3><table><thead><tr><th>主要派系</th><th>Linux 发行版</th><th>主要安装方式</th></tr></thead><tbody><tr><td>Redhat</td><td>Redhat、CentOS、Fedora 等</td><td>make、rpm、yum、dnf</td></tr><tr><td>Debian</td><td>Kali、Ubuntu</td><td>deb、apt、dpkg</td></tr><tr><td>FreeBSD</td><td>FreeBSD</td><td>make、pkg、ports</td></tr></tbody></table><h3 id="（三）源码编译"><a href="#（三）源码编译" class="headerlink" title="（三）源码编译"></a>（三）源码编译</h3><p><img src="https://img1.imgtp.com/2023/08/22/nBOXtPEt.png"></p><p>源码已经安装：（干什么的？我不到啊）<br><img src="https://img1.imgtp.com/2023/08/22/40dWTuoz.png" alt="源码安装redis"></p><hr><h3 id="（四）rpm-安装"><a href="#（四）rpm-安装" class="headerlink" title="（四）rpm 安装"></a>（四）rpm 安装</h3><p>PedHat Package Manager<br>不需要手动编译了<br>文件尾缀.rpm</p><table><thead><tr><th>操作</th><th>命令</th><th>说明</th></tr></thead><tbody><tr><td>查询</td><td>rpm -qa;rpm -q 包名</td><td>q query</td></tr><tr><td>安装</td><td>rpm -ivh 包名</td><td>install verbose hash</td></tr><tr><td>升级</td><td>rpm -Uvh 包名</td><td>U 安装或升级版本</td></tr><tr><td>卸载</td><td>rpm -e 包名</td><td>需要先卸载依赖其的软件</td></tr></tbody></table><p>注意：rpm 安装存在软件之间的相互依赖关系，不方便用户使用</p><hr><h3 id="（五）yum-安装"><a href="#（五）yum-安装" class="headerlink" title="（五）yum 安装"></a>（五）yum 安装</h3><p>Yellow Dog Updater， Modified</p><h4 id="1-命令"><a href="#1-命令" class="headerlink" title="1. 命令"></a>1. 命令</h4><p><img src="https://img1.imgtp.com/2023/08/22/B9oR87L0.png"></p><h4 id="2-DNF-和-YUM"><a href="#2-DNF-和-YUM" class="headerlink" title="2. DNF 和 YUM"></a>2. DNF 和 YUM</h4><p>2013 年 yum 作者因车祸去世后，yyum 停止更新，推出 dnf 代替 yum （danadified YUM）</p><h4 id="3-yum-安装"><a href="#3-yum-安装" class="headerlink" title="3. yum 安装"></a>3. yum 安装</h4><p>MYSQl 服务器<br>物理机安装 navicat</p><hr><h3 id="（六）Debian-系"><a href="#（六）Debian-系" class="headerlink" title="（六）Debian 系"></a>（六）Debian 系</h3><ul><li>Deb 包安装</li><li>apt 安装（自动安装 ）</li></ul><table><thead><tr><th>操作</th><th>命令</th></tr></thead><tbody><tr><td>搜索</td><td>apt search</td></tr><tr><td>安装</td><td>apt install</td></tr><tr><td>升级</td><td>apt update</td></tr><tr><td>卸载</td><td>apt remove</td></tr></tbody></table><h3 id="（七）FreeBSD-系"><a href="#（七）FreeBSD-系" class="headerlink" title="（七）FreeBSD 系"></a>（七）FreeBSD 系</h3><ul><li>package</li><li>ports</li></ul><table><thead><tr><th>操作</th><th>命令</th></tr></thead><tbody><tr><td>搜索</td><td>pkg search</td></tr><tr><td>安装</td><td>pkg install</td></tr><tr><td>升级</td><td>pkg upgrade</td></tr><tr><td>卸载</td><td>pkg del</td></tr></tbody></table><hr><h2 id="四、软件版本管理"><a href="#四、软件版本管理" class="headerlink" title="四、软件版本管理"></a>四、软件版本管理</h2><h3 id="（一）update-alternatives"><a href="#（一）update-alternatives" class="headerlink" title="（一）update-alternatives"></a>（一）update-alternatives</h3><ol><li><p>查看：<br>update-alternatives</p></li><li><p>添加：<br>alternatives –install &#x2F;usr&#x2F;bin&#x2F;java java&#x2F;usr&#x2F;local&#x2F;jdk-11.0.2&#x2F;<br>bin&#x2F;java 3</p></li></ol><blockquote><p>&#x2F;usr&#x2F;bin&#x2F;java 注册地址，软链<br>java(第二个 java) 服务器名<br>&#x2F;usr&#x2F;local&#x2F;jdk-11.0.2&#x2F;bin&#x2F;java 实际程序路径<br>3 优先级</p></blockquote><ol start="3"><li>切换<br>update-alternatives –config java<br>然后选择版本对应的数字就可以了</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> msb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux (7-12)文本编辑器</title>
+      <link href="/posts/91284331.html"/>
+      <url>/posts/91284331.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Linux-文本编辑器"><a href="#Linux-文本编辑器" class="headerlink" title="Linux 文本编辑器"></a>Linux 文本编辑器</h1><p>文本编辑器</p><ul><li>windows：<br>notepad、sublime、ultraEdit</li><li>Linux：<br>VI&#x2F;VIM、nano、Emacs、Sed、Gedit、Kate</li></ul><p>VI、VIM 字符界面文本编辑<br>是之后学习使用的重点工具</p><h2 id="一、Vi-和-Vim-的区别"><a href="#一、Vi-和-Vim-的区别" class="headerlink" title="一、Vi 和 Vim 的区别"></a>一、Vi 和 Vim 的区别</h2><ul><li>vi：visual interface</li><li>1976 BillJoy（ex）</li><li>1991 Bram Moolenaar</li><li>Vim： VI IMproved（兼容 VI 的大部分功能）</li></ul><h2 id="二、VIM-的配置文件"><a href="#二、VIM-的配置文件" class="headerlink" title="二、VIM 的配置文件"></a>二、VIM 的配置文件</h2><h3 id="1）"><a href="#1）" class="headerlink" title="1）"></a>1）</h3><p>man vim 查看可操作命令</p><p>大部分 vim + 文件名</p><h3 id="2）查看详细参数"><a href="#2）查看详细参数" class="headerlink" title="2）查看详细参数"></a>2）查看详细参数</h3><p>全局配置： &#x2F;etc&#x2F;vimrc<br>用户配置： ~&#x2F;.vimrc</p><p>详细配置参考：<a href="https://blog.csdn.net/xiao_yi_xiao/article/details/118491698">https://blog.csdn.net/xiao_yi_xiao/article/details/118491698</a></p><h2 id="三、VIm-的三种模式"><a href="#三、VIm-的三种模式" class="headerlink" title="三、VIm 的三种模式"></a>三、VIm 的三种模式</h2><ul><li>命令模式：通过命令操作文本文件</li><li>编辑模式：对文本的内容进行编辑</li><li>底行模式：结束操作的时候使用</li></ul><h3 id="1）示例"><a href="#1）示例" class="headerlink" title="1）示例"></a>1）示例</h3><p>vi 文件名<br>&#x2F;&#x2F;命令模式&#x2F;&#x2F; 输入 i a o<br>&#x2F;&#x2F;编辑模式&#x2F;&#x2F; Esc<br>&#x2F;&#x2F;命令模式&#x2F;&#x2F; ：<br>&#x2F;&#x2F;底行模式&#x2F;&#x2F; 命令回车结束<br>&#x2F;&#x2F;命令模式&#x2F;&#x2F; ：wq 退出</p><h3 id="2）命令模式"><a href="#2）命令模式" class="headerlink" title="2）命令模式"></a>2）命令模式</h3><p>vim 文件名 进入命令模式<br>若存在临时文件 需要处理（保存或者删除）之后才能对原文件进行操作</p><h4 id="1-移动光标的操作"><a href="#1-移动光标的操作" class="headerlink" title="1.移动光标的操作"></a>1.移动光标的操作</h4><dl><dt>.<br><img src="https://img1.imgtp.com/2023/08/22/xfqOPvLo.png"></dt><dd>set nu 标记行号（nu&#x2F;numble）</dd></dl><h4 id="2-搜索替换操作"><a href="#2-搜索替换操作" class="headerlink" title="2.搜索替换操作"></a>2.搜索替换操作</h4><p><img src="https://img1.imgtp.com/2023/08/22/i599Vcxu.png"></p><h4 id="3-删除和复制的操作"><a href="#3-删除和复制的操作" class="headerlink" title="3.删除和复制的操作"></a>3.删除和复制的操作</h4><p><img src="https://img1.imgtp.com/2023/08/22/YGctZDNz.png"></p><h3 id="3）编辑模式"><a href="#3）编辑模式" class="headerlink" title="3）编辑模式"></a>3）编辑模式</h3><p>命令模式中，按</p><ul><li>a: 在光标下一个字符前插入文本</li><li>A: 在光标所在的行模插入文本</li><li>i： 在当前光标插入文本（常用）</li><li>I： 在光标的行首插入文本</li><li>o： 在光标所在的行下插入文本</li><li>O: 在光标所在的行上插入文本</li><li>r： 修改当前的光标所在的字符</li><li>R： 替换文本</li></ul><p>撤销： Ctrl + U</p><p>退出编辑模式： Esc</p><h3 id="4）底行模式"><a href="#4）底行模式" class="headerlink" title="4）底行模式"></a>4）底行模式</h3><p><em>冒号：后面没有空格（笔记字体看上去会有空格）</em></p><h4 id="1-进入底行模式模式"><a href="#1-进入底行模式模式" class="headerlink" title="1. 进入底行模式模式"></a>1. 进入底行模式模式</h4><p>Shift + ：<br>:w 保存<br>:q 退出<br>:wq 保存并且退出<br>:q！ 放弃修改，退出<br>:e！ 放弃所有修改，退出</p><p>显示行号<br>:set nu</p><blockquote><p>注意这里已经利用<br>sudo vim &#x2F;etc&#x2F;vimrc 在配置文件里面加入了 set number<br>以后看文本文件自动显示行号了 不需要手动开启</p></blockquote><p>:%</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> msb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux （6-12）查看和处理文件内容</title>
       <link href="/posts/472f4016.html"/>
       <url>/posts/472f4016.html</url>
@@ -578,22 +628,22 @@
     
     
     <entry>
-      <title>友链</title>
-      <link href="/links/index.html"/>
-      <url>/links/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<div class="post-body">   <div id="links">      <style>         .links-content{         margin-top:1rem;         }         .link-navigation::after {         content: " ";         display: block;         clear: both;         }         .card {         width: 45%;         font-size: 1rem;         padding: 10px 20px;         border-radius: 4px;         transition-duration: 0.15s;         margin-bottom: 1rem;         display:flex;         }         .card:nth-child(odd) {         float: left;         }         .card:nth-child(even) {         float: right;         }         .card:hover {         transform: scale(1.1);         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);         }         .card a {         border:none;         }         .card .ava {         width: 7.5rem!important;         height: 6rem!important;         margin:0!important;         margin-right: 1em!important;         border-radius:4px;         }         .card .card-header {         font-style: italic;         overflow: hidden;         width: 100%;         }         .card .card-header a {         font-style: normal;         color: #2bbc8a;         font-weight: bold;         text-decoration: none;         }         .card .card-header a:hover {         color: #d480aa;         text-decoration: none;         }         .card .card-header .info {         font-style:normal;         color:#a3a3a3;         font-size:14px;         min-width: 0;         overflow: hidden;         white-space: nowrap;         }</style>      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">海盗猫猫</a>                  </div>                  <div class="info">就想和有趣的人浪费时间</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">这是图床代理先生</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">いずみ さきり</a>                  </div>                  <div class="info">哼哼~</div>               </div>            </div>         </div>      </div>   </div></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>友链</title>
+      <link href="/links/index.html"/>
+      <url>/links/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="post-body">   <div id="links">      <style>         .links-content{         margin-top:1rem;         }         .link-navigation::after {         content: " ";         display: block;         clear: both;         }         .card {         width: 45%;         font-size: 1rem;         padding: 10px 20px;         border-radius: 4px;         transition-duration: 0.15s;         margin-bottom: 1rem;         display:flex;         }         .card:nth-child(odd) {         float: left;         }         .card:nth-child(even) {         float: right;         }         .card:hover {         transform: scale(1.1);         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);         }         .card a {         border:none;         }         .card .ava {         width: 7.5rem!important;         height: 6rem!important;         margin:0!important;         margin-right: 1em!important;         border-radius:4px;         }         .card .card-header {         font-style: italic;         overflow: hidden;         width: 100%;         }         .card .card-header a {         font-style: normal;         color: #2bbc8a;         font-weight: bold;         text-decoration: none;         }         .card .card-header a:hover {         color: #d480aa;         text-decoration: none;         }         .card .card-header .info {         font-style:normal;         color:#a3a3a3;         font-size:14px;         min-width: 0;         overflow: hidden;         white-space: nowrap;         }</style>      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">海盗猫猫</a>                  </div>                  <div class="info">就想和有趣的人浪费时间</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">这是图床代理先生</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">いずみ さきり</a>                  </div>                  <div class="info">哼哼~</div>               </div>            </div>         </div>      </div>   </div></div>]]></content>
       
     </entry>
     
