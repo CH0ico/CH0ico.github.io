@@ -4,7 +4,45 @@
   
     
     <entry>
-      <title>Linux(8-12) 安装软件</title>
+      <title>Linux (9-12)用户和权限管理</title>
+      <link href="/posts/1a867dfe.html"/>
+      <url>/posts/1a867dfe.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="用户和权限管理"><a href="#用户和权限管理" class="headerlink" title="用户和权限管理"></a>用户和权限管理</h1><h2 id="一、用户和用户组"><a href="#一、用户和用户组" class="headerlink" title="一、用户和用户组"></a>一、用户和用户组</h2><h3 id="（一）用户组"><a href="#（一）用户组" class="headerlink" title="（一）用户组"></a>（一）用户组</h3><p>Group 部门分组<br>一个用户必须属于至少一个组（主要组）</p><h4 id="1）组-ID-Group-（GID）"><a href="#1）组-ID-Group-（GID）" class="headerlink" title="1）组 ID-Group （GID）"></a>1）组 ID-Group （GID）</h4><ol><li>root 用户组：GID&#x3D;0</li><li>程序用户组（系统用户组）：1-999（CentOS7）</li><li>普通用户组：1000-65535 （用户自定义产生的用户）</li></ol><h4 id="2）用户组相关命令"><a href="#2）用户组相关命令" class="headerlink" title="2）用户组相关命令"></a>2）用户组相关命令</h4><p>查看全部组： cat &#x2F;etc&#x2F;group<br>查看用户所属组： groups<br>添加用户组： groupadd xx<br>删除用户组： groupdel xx</p><h3 id="（二）用户"><a href="#（二）用户" class="headerlink" title="（二）用户"></a>（二）用户</h3><h4 id="1）用户-ID-User-（UID）"><a href="#1）用户-ID-User-（UID）" class="headerlink" title="1）用户 ID-User （UID）"></a>1）用户 ID-User （UID）</h4><ol><li>root 用户：UID&#x3D;0</li><li>程序用户（系统用户）：1-999（CentOS）</li><li>普通用户：1000-65535</li></ol><h4 id="2）用户相关命令"><a href="#2）用户相关命令" class="headerlink" title="2）用户相关命令"></a>2）用户相关命令</h4><p>查看所有用户： cat &#x2F;etc&#x2F;passwd<br>添加用户： useradd ..<br>删除用户： userwd ..<br>修改用户信息： usermod ..</p><hr><h2 id="二、用户管理相关文件"><a href="#二、用户管理相关文件" class="headerlink" title="二、用户管理相关文件"></a>二、用户管理相关文件</h2><h3 id="（一）group-文件格式"><a href="#（一）group-文件格式" class="headerlink" title="（一）group 文件格式"></a>（一）group 文件格式</h3><p>在&#x2F;etc&#x2F;group 中 文件名称顺序意义依次为</p><ol><li>组名</li><li>组密码（！ 表示不使用密码）</li><li>GID</li><li>用户列<br>（x 表示影子文件：cat &#x2F;etc&#x2F;gshadow ）</li></ol><h3 id="（二）passwd-文件格式"><a href="#（二）passwd-文件格式" class="headerlink" title="（二）passwd 文件格式"></a>（二）passwd 文件格式</h3><p>在&#x2F;etc&#x2F;passwd 中</p><ol><li>用户名</li><li>密码</li><li>UID</li><li>GID</li><li>全名</li><li>home 路径</li><li>调用的 shell 解释工具<br>影子文件（密码存放）： cat &#x2F;etc&#x2F;shadow</li></ol><h3 id="（三）shadow-文件格式"><a href="#（三）shadow-文件格式" class="headerlink" title="（三）shadow 文件格式"></a>（三）shadow 文件格式</h3><p>在&#x2F;etc&#x2F;group&#x2F;中</p><ol><li>用户名</li><li>密码</li><li>最后修改时间（1970.1.1 日后多少天）</li><li>（使用 date -d “1970-01-01 &lt; number &gt;”翻译成日期）</li><li>最小修改间隔时间</li><li>密码有效期</li><li>密码需要变更前的警告天数</li><li>密码过期后的宽限天数</li><li>账号失效时间</li><li>保留</li></ol><h4 id="密码格式"><a href="#密码格式" class="headerlink" title="密码格式"></a>密码格式</h4><p>命令： openssl passwd -1 salt admin 123456<br>格式： $ id $ salt $ encrypted</p><p>示例： $ 1 $ admin $ LCLIYcRe.ee8dQwgrFc5nz<br>passwd -1 -salt choco（盐） 123456</p><table><thead><tr><th>id 数字</th><th>加密方式</th></tr></thead><tbody><tr><td>1</td><td>MD5</td></tr><tr><td>2a</td><td>Blowfish</td></tr><tr><td>5</td><td>SHA-256</td></tr><tr><td>6</td><td>SHA-512</td></tr></tbody></table><h3 id="（四）sudoers-文件格式"><a href="#（四）sudoers-文件格式" class="headerlink" title="（四）sudoers 文件格式"></a>（四）sudoers 文件格式</h3><p>在&#x2F;etc&#x2F;sudoers&#x2F;文件中<br>把某项原本 root 用户的权限授权给普通用户执行<br>格式：<br>choco ALL &#x3D; （ALL）ALL<br>kali ALL &#x3D; （ALL）NOPASSWD： &#x2F;bin&#x2F;useradd<br>（visudo 打开配置文件并写入，其他路径访问只能读 不能写哈）</p><p>全拼：<br>super user do<br>sudo -I<br>sudo command （需要执行的命令）</p><hr><h2 id="三、用户管理基本命令"><a href="#三、用户管理基本命令" class="headerlink" title="三、用户管理基本命令"></a>三、用户管理基本命令</h2><h3 id="（一）基础操作"><a href="#（一）基础操作" class="headerlink" title="（一）基础操作"></a>（一）基础操作</h3><table><thead><tr><th>操作</th><th>命令</th></tr></thead><tbody><tr><td>查询用户账号身份标识</td><td>id</td></tr><tr><td>查询用户账号的登陆属性</td><td>finger</td></tr><tr><td>查询当前主机的用户登录情况</td><td>w、who</td></tr><tr><td>查看用户</td><td>whoami</td></tr><tr><td>切换用户</td><td>su</td></tr></tbody></table><p>查询用户账号身份标志</p><h3 id="（二）用户和文件的关系（LL-查看）"><a href="#（二）用户和文件的关系（LL-查看）" class="headerlink" title="（二）用户和文件的关系（LL 查看）"></a>（二）用户和文件的关系（LL 查看）</h3><p>文件所有者： 所属文用户、所属组<br>访问权限：读、写、执行</p><p>文件的拥有者&#x2F;文件的所属者 change owner<br>chown -R wuya &#x2F;usr&#x2F;local&#x2F;soft<br>chown -R redis：redis &#x2F;usr&#x2F;local&#x2F;soft&#x2F;redis</p><hr><h2 id="四、文件和目录权限"><a href="#四、文件和目录权限" class="headerlink" title="四、文件和目录权限"></a>四、文件和目录权限</h2><h3 id="（一）文件类型"><a href="#（一）文件类型" class="headerlink" title="（一）文件类型"></a>（一）文件类型</h3><ol><li>首位：<br>d： 目录文件（文件夹） -： 软连接<br>l： 块设备文件（硬盘、光驱）<br>p: 管道文件<br>c： 字符设备文件（屏幕等串口文件）<br>s： 套接口文</li></ol><p>后面三段 rwx rwx r-x<br>r 可读 4 w 可写可移动 2 x 可执行 1（可以进入文件） -无权限 0<br>根据三个数字相加的和 可以反推权限情况（775…）</p><ol start="2"><li>所属用户的权限 u user</li><li>所属组用户的权限 g group</li><li>其他用户的权限 o other</li></ol><h3 id="（二）修改权限"><a href="#（二）修改权限" class="headerlink" title="（二）修改权限"></a>（二）修改权限</h3><p><img src="https://img1.imgtp.com/2023/08/26/5wBiPSAD.png" alt="输入图片说明"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> msb </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>句子 2023.8.22</title>
+      <link href="/posts/84426208.html"/>
+      <url>/posts/84426208.html</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>你我终将行踪不明</p></li><li><p>愿你的天空清澈晴朗，愿你那可爱的笑容明快安详，祝福你美满如意，因为你曾赋予另一颗孤独而满怀感激的心片刻欢欣愉快的时光</p></li><li><p>把自己还给自己，把别人还给别人，让花成花，让树成树。</p></li><li><p>路灯说，告别就是，先离开的人，影子拖在地上，很长很长</p></li><li><p>孤独地去面对自己最深的痛苦，克服那想要逃避的欲望以及有人能与他共苦的幻觉</p></li><li><p>你要从我的记忆里离开，我才能自由</p></li><li><p>希望美好的东西，能够美好地终结，是一种卑微地人之常情。（整整一分钟的狂喜啊！这难道不足以让人享用一生吗？）</p></li><li><p>你不能做我的诗，正如我不能做你的梦</p></li><li><p>他依然向往着长岛的雪，向往着潘帕斯的风吟鸟唱。很久以后他才知道，长岛是没有雪的</p></li><li><p>泪水几点钟落地，飞鸟要去向何方，人们聚和离，云朵来又往。讲故事的人，总有一个故事不愿讲</p></li><li><p>常常谈论自己的人，往往只是为了隐藏自己</p></li><li><p>所谓高贵的灵魂，即对自己怀有敬畏之心</p></li><li><p>不能听命于自己者，就要受命于他人</p></li><li><p>理想主义者是不可救药的，如果他被扔出了他的天堂，他会再制造出一个理想的地狱</p></li><li><p>心中充满爱时，刹那即永恒</p></li><li><p>一个人只有在独处的时候才能成为自己。因为一个人只有在独处时才是真正自由的。</p></li><li><p>克服自己的时代，成为无时代的人</p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux(8-12)安装软件</title>
       <link href="/posts/da49afd9.html"/>
       <url>/posts/da49afd9.html</url>
       
@@ -29,7 +67,7 @@
     
     
     <entry>
-      <title>Linux (7-12)文本编辑器</title>
+      <title>Linux(7-12)文本编辑器</title>
       <link href="/posts/91284331.html"/>
       <url>/posts/91284331.html</url>
       
@@ -617,22 +655,22 @@
     
     
     <entry>
-      <title>sayings</title>
-      <link href="/sayings/index.html"/>
-      <url>/sayings/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<html><head></head><body><style>/* CSS��ʽ */</style><div class="post-body">   <div id="links">      <div class="links-content">         <div class="link-navigation">            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/7X5zScC6.jpg" />               <div class="card-header">                  <div>                     <a href="https://blog.csdn.net/CH0ico?spm=1010.2135.3001.5343">����èè</a>                  </div>                  <div class="info">�������Ȥ�����˷�ʱ��</div>               </div>            </div>            <div class="card">              <img class="ava" src="https://img1.imgtp.com/2023/08/03/VrbZ78tH.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">Mr.Imgtp</a>                  </div>                  <div class="info">����ͼ����������</div>               </div>            </div>            <div class="card">               <img class="ava" src="https://img1.imgtp.com/2023/08/03/TJMDLJUs.jpg" />               <div class="card-header">                  <div>                     <a href="https://www.imgtp.com/">������ ������</a>                  </div>                  <div class="info">�ߺ�~</div>               </div>            </div>         </div>      </div>   </div></div></body></html>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>近期喜欢的句子</title>
+      <link href="/sayings/index.html"/>
+      <url>/sayings/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<ul><li>快乐是痊愈的一个征兆 ——尼采</li></ul>]]></content>
       
     </entry>
     

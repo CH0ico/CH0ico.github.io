@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/posts/da49afd9.html</loc>
-    <lastmod>2023-08-22</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/posts/91284331.html</loc>
-    <lastmod>2023-08-22</lastmod>
+    <loc>http://example.com/posts/1a867dfe.html</loc>
+    <lastmod>2023-08-26</lastmod>
   </url>
   <url>
     <loc>http://example.com/posts/472f4016.html</loc>
-    <lastmod>2023-08-21</lastmod>
+    <lastmod>2023-08-26</lastmod>
   </url>
   <url>
     <loc>http://example.com/posts/1946ed7.html</loc>
-    <lastmod>2023-08-21</lastmod>
+    <lastmod>2023-08-26</lastmod>
   </url>
   <url>
     <loc>http://example.com/posts/f86f1ce9.html</loc>
-    <lastmod>2023-08-21</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/posts/9ce2435.html</loc>
-    <lastmod>2023-08-21</lastmod>
+    <lastmod>2023-08-26</lastmod>
   </url>
   <url>
     <loc>http://example.com/posts/ec103ef0.html</loc>
-    <lastmod>2023-08-18</lastmod>
+    <lastmod>2023-08-26</lastmod>
   </url>
   <url>
     <loc>http://example.com/posts/eb2d9c5.html</loc>
-    <lastmod>2023-08-18</lastmod>
+    <lastmod>2023-08-26</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/posts/9ce2435.html</loc>
+    <lastmod>2023-08-26</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/posts/91284331.html</loc>
+    <lastmod>2023-08-26</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/posts/da49afd9.html</loc>
+    <lastmod>2023-08-26</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/posts/84426208.html</loc>
+    <lastmod>2023-08-22</lastmod>
   </url>
   <url>
     <loc>http://example.com/posts/ec12f096.html</loc>
