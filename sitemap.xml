@@ -333,14 +333,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E6%97%A5%E5%BF%97/</loc>
+    <loc>http://example.com/tags/network/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/network/</loc>
+    <loc>http://example.com/tags/%E6%97%A5%E5%BF%97/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -354,14 +354,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/OneWolf/</loc>
+    <loc>http://example.com/tags/me/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/me/</loc>
+    <loc>http://example.com/tags/OneWolf/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
