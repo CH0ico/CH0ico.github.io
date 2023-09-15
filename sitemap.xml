@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/posts/c742fb7a.html</loc>
+    <loc>http://example.com/posts/d49f46be.html</loc>
     
     <lastmod>2023-09-15</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/posts/d49f46be.html</loc>
+    <loc>http://example.com/posts/c742fb7a.html</loc>
     
     <lastmod>2023-09-15</lastmod>
     
@@ -349,6 +349,13 @@
   </url>
   
   <url>
+    <loc>http://example.com/tags/network/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/we/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -370,13 +377,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/network/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/society/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -386,14 +386,14 @@
 
   
   <url>
-    <loc>http://example.com/categories/Linux/</loc>
+    <loc>http://example.com/categories/tools/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/tools/</loc>
+    <loc>http://example.com/categories/Linux/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -414,14 +414,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/today/</loc>
+    <loc>http://example.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <loc>http://example.com/categories/today/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
